@@ -65,8 +65,8 @@ class ProductCard extends StatelessWidget {
     );
   }
 
-  Widget _buildImage(String? url, {double? width, double? height, BoxFit fit = BoxFit.cover}) {
-    url = "https://eimibuyorsale-data.s3.ap-south-2.amazonaws.com/images/Imagee9ef1a20-7488-11f0-b621-0581caebe8a1.png";
+  Widget _buildImage(String? url, {double? width, double? height, BoxFit fit = BoxFit.fill}) {
+    url = "https://static.eimibuyorsell.com/images/image-db23c5e1-751a-11f0-8e40-47727effada6.png";
     if (url == null || url.isEmpty) {
       return Container(
         height: height,
