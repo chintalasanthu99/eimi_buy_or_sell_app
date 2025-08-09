@@ -1,0 +1,200 @@
+[
+
+  {
+    "id": "b1f314c1-5b2a-44e6-9620-c92a86fc4c8e",
+    "title": "Properties",
+    "image": null,
+    "description": "Find properties for sale or rent",
+    "isFeatured": true,
+    "sortOrder": 2,
+    "createdAt": "2025-07-08T00:00:00Z",
+    "updatedAt": "2025-07-08T00:00:00Z",
+    "parentId": null,
+    "isActive": true,
+    "translations": {
+      "en": "Properties",
+      "hi": "संपत्तियां"
+    }
+  },
+  {
+    "id": "ca113cdf-6ec3-4b86-9642-fb17b7d9f13f",
+    "title": "Mobiles",
+    "image": null,
+    "description": "Smartphones and accessories",
+    "isFeatured": true,
+    "sortOrder": 3,
+    "createdAt": "2025-07-08T00:00:00Z",
+    "updatedAt": "2025-07-08T00:00:00Z",
+    "parentId": null,
+    "isActive": true,
+    "translations": {
+      "en": "Mobiles",
+      "hi": "मोबाइल"
+    }
+  },
+  {
+    "id": "1770a635-92cb-41bc-badd-e26d9d7ef3c3",
+    "title": "Jobs",
+    "image": null,
+    "description": "Browse job listings",
+    "isFeatured": true,
+    "sortOrder": 4,
+    "createdAt": "2025-07-08T00:00:00Z",
+    "updatedAt": "2025-07-08T00:00:00Z",
+    "parentId": null,
+    "isActive": true,
+    "translations": {
+      "en": "Jobs",
+      "hi": "नौकरियां"
+    }
+  },
+  {
+    "id": "917778c4-3a9b-4562-8ec1-b8b0485a05a0",
+    "title": "Bikes",
+    "image": null,
+    "description": "Buy and sell bikes",
+    "isFeatured": false,
+    "sortOrder": 5,
+    "createdAt": "2025-07-08T00:00:00Z",
+    "updatedAt": "2025-07-08T00:00:00Z",
+    "parentId": null,
+    "isActive": true,
+    "createdBy": {
+      "id": "",
+      "name": ""
+    },
+
+    "translations": {
+      "en": "Bikes",
+      "hi": "बाइक"
+    }
+  },
+  {
+    "id": "d4735e3a-265e-4f70-a325-7c123f1e91fc",
+    "title": "Cars",
+    "image": null,
+    "description": "Buy and sell new or used cars",
+    "isFeatured": true,
+    "sortOrder": 1,
+    "createdAt": "2025-07-08T00:00:00Z",
+    "updatedAt": "2025-07-08T00:00:00Z",
+    "parentId": null,
+    "isActive": true,
+    "translations": {
+      "en": "Cars",
+      "hi": "कारें"
+    }
+  },
+  {
+    "id": "44d4e1b0-5fb6-4f6d-b87e-8fcf37f0f92a",
+    "title": "Electronic & Appliances",
+    "image": null,
+    "description": "TVs, fridges, and more",
+    "isFeatured": false,
+    "sortOrder": 6,
+    "createdAt": "2025-07-08T00:00:00Z",
+    "updatedAt": "2025-07-08T00:00:00Z",
+    "parentId": null,
+    "isActive": true,
+    "translations": {
+      "en": "Electronics",
+      "hi": "इलेक्ट्रॉनिक्स"
+    }
+  },
+  {
+    "id": "2d2efb2a-0dc6-46bb-b403-6a4e51955a18",
+    "title": "Commercial Vehicles & Spares",
+    "image": null,
+    "description": "Trucks and vehicle parts",
+    "isFeatured": false,
+    "sortOrder": 7,
+    "createdAt": "2025-07-08T00:00:00Z",
+    "updatedAt": "2025-07-08T00:00:00Z",
+    "parentId": null,
+    "isActive": true,
+    "translations": {
+      "en": "Commercial Vehicles",
+      "hi": "वाणिज्यिक वाहन"
+    }
+  },
+  {
+    "id": "2c582f0a-ef55-42c7-a2b4-130219f609d9",
+    "title": "Furniture",
+    "image": null,
+    "description": "New and used furniture",
+    "isFeatured": false,
+    "sortOrder": 8,
+    "createdAt": "2025-07-08T00:00:00Z",
+    "updatedAt": "2025-07-08T00:00:00Z",
+    "parentId": null,
+    "isActive": true,
+    "translations": {
+      "en": "Furniture",
+      "hi": "फर्नीचर"
+    }
+  },
+  {
+    "id": "64dc5d57-e254-4294-8e52-8ab30e6f5a06",
+    "title": "Fashion",
+    "image": null,
+    "description": "Clothes, shoes and more",
+    "isFeatured": false,
+    "sortOrder": 9,
+    "createdAt": "2025-07-08T00:00:00Z",
+    "updatedAt": "2025-07-08T00:00:00Z",
+    "parentId": null,
+    "isActive": true,
+    "translations": {
+      "en": "Fashion",
+      "hi": "फैशन"
+    }
+  },
+  {
+    "id": "8934f83d-98dc-46e2-9b57-9dbf2adba7f4",
+    "title": "Books Sports & Hobbies",
+    "image": null,
+    "description": "Books, games and more",
+    "isFeatured": false,
+    "sortOrder": 10,
+    "createdAt": "2025-07-08T00:00:00Z",
+    "updatedAt": "2025-07-08T00:00:00Z",
+    "parentId": null,
+    "isActive": true,
+    "translations": {
+      "en": "Books & Sports",
+      "hi": "पुस्तकें और खेल"
+    }
+  },
+  {
+    "id": "0d129fd5-99f4-45f5-8a0a-51e612fefc2b",
+    "title": "Pets",
+    "image": null,
+    "description": "Dogs, cats and accessories",
+    "isFeatured": false,
+    "sortOrder": 11,
+    "createdAt": "2025-07-08T00:00:00Z",
+    "updatedAt": "2025-07-08T00:00:00Z",
+    "parentId": null,
+    "isActive": true,
+    "translations": {
+      "en": "Pets",
+      "hi": "पालतू जानवर"
+    }
+  },
+  {
+    "id": "2fbe5cf5-349f-4b1c-90b8-9b36ffda4967",
+    "title": "Services",
+    "image": null,
+    "description": "Local services",
+    "isFeatured": false,
+    "sortOrder": 12,
+    "createdAt": "2025-07-08T00:00:00Z",
+    "updatedAt": "2025-07-08T00:00:00Z",
+    "parentId": null,
+    "isActive": true,
+    "translations": {
+      "en": "Services",
+      "hi": "सेवाएं"
+    }
+  }
+]

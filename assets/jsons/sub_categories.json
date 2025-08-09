@@ -1,0 +1,895 @@
+[
+  {
+    "id": "c706c5ac-71d7-45c6-886d-ccd29b838636",
+    "title": "Cars",
+    "image": null,
+    "description": "Cars under Cars",
+    "isFeatured": false,
+    "sortOrder": 1,
+    "createdAt": "2025-07-09T17:31:50.228707Z",
+    "updatedAt": "2025-07-09T17:31:50.228707Z",
+    "parentId": null,
+    "isActive": true,
+    "translations": {
+      "en": "Cars"
+    },
+    "category": {
+      "id": "d4735e3a-265e-4f70-a325-7c123f1e91fc",
+      "name": "Cars"
+    }
+  },
+  {
+    "id": "f7f61ad2-0ed6-4327-b3a0-80ab0682216d",
+    "title": "Motorcycles",
+    "image": null,
+    "description": "Motorcycles under Bikes",
+    "isFeatured": false,
+    "sortOrder": 1,
+    "createdAt": "2025-07-09T17:31:50.228707Z",
+    "updatedAt": "2025-07-09T17:31:50.228707Z",
+    "parentId": null,
+    "isActive": true,
+    "translations": {
+      "en": "Motorcycles"
+    },
+    "category": {
+      "id": "917778c4-3a9b-4562-8ec1-b8b0485a05a0",
+      "name": "Bikes"
+    }
+  },
+  {
+    "id": "c7258e1c-8fa6-4592-b9cb-45a6cbb95c17",
+    "title": "Scooters",
+    "image": null,
+    "description": "Scooters under Bikes",
+    "isFeatured": false,
+    "sortOrder": 2,
+    "createdAt": "2025-07-09T17:31:50.228707Z",
+    "updatedAt": "2025-07-09T17:31:50.228707Z",
+    "parentId": null,
+    "isActive": true,
+    "translations": {
+      "en": "Scooters"
+    },
+    "category": {
+      "id": "917778c4-3a9b-4562-8ec1-b8b0485a05a0",
+      "name": "Bikes"
+    }
+  },
+  {
+    "id": "d7dc8559-6042-4d8b-b100-e564f7d8c35d",
+    "title": "Spare Parts",
+    "image": null,
+    "description": "Spare Parts under Bikes",
+    "isFeatured": false,
+    "sortOrder": 3,
+    "createdAt": "2025-07-09T17:31:50.228707Z",
+    "updatedAt": "2025-07-09T17:31:50.228707Z",
+    "parentId": null,
+    "isActive": true,
+    "translations": {
+      "en": "Spare Parts"
+    },
+    "category": {
+      "id": "917778c4-3a9b-4562-8ec1-b8b0485a05a0",
+      "name": "Bikes"
+    }
+  },
+  {
+    "id": "37fce61b-395e-4ee8-b846-d1d1b5dfae32",
+    "title": "Bicycles",
+    "image": null,
+    "description": "Bicycles under Bikes",
+    "isFeatured": false,
+    "sortOrder": 4,
+    "createdAt": "2025-07-09T17:31:50.228707Z",
+    "updatedAt": "2025-07-09T17:31:50.228707Z",
+    "parentId": null,
+    "isActive": true,
+    "translations": {
+      "en": "Bicycles"
+    },
+    "category": {
+      "id": "917778c4-3a9b-4562-8ec1-b8b0485a05a0",
+      "name": "Bikes"
+    }
+  },
+  {
+    "id": "1be9b90d-3019-470f-b32b-37dcd842f412",
+    "title": "For Sale Houses & Apartments",
+    "image": null,
+    "description": "For Sale Houses & Apartments under Properties",
+    "isFeatured": false,
+    "sortOrder": 1,
+    "createdAt": "2025-07-09T17:31:50.228707Z",
+    "updatedAt": "2025-07-09T17:31:50.228707Z",
+    "parentId": null,
+    "isActive": true,
+    "translations": {
+      "en": "For Sale Houses & Apartments"
+    },
+    "category": {
+      "id": "b1f314c1-5b2a-44e6-9620-c92a86fc4c8e",
+      "name": "Properties"
+    }
+  },
+  {
+    "id": "95f2b533-cea8-4dd0-b512-d11eb8faaccf",
+    "title": "Rent Houses & Apartments",
+    "image": null,
+    "description": "Rent Houses & Apartments under Properties",
+    "isFeatured": false,
+    "sortOrder": 2,
+    "createdAt": "2025-07-09T17:31:50.228707Z",
+    "updatedAt": "2025-07-09T17:31:50.228707Z",
+    "parentId": null,
+    "isActive": true,
+    "translations": {
+      "en": "Rent Houses & Apartments"
+    },
+    "category": {
+      "id": "b1f314c1-5b2a-44e6-9620-c92a86fc4c8e",
+      "name": "Properties"
+    }
+  },
+  {
+    "id": "2351c91f-9b4e-4241-a28a-5f78b3d59fcd",
+    "title": "Lands & Plots",
+    "image": null,
+    "description": "Lands & Plots under Properties",
+    "isFeatured": false,
+    "sortOrder": 3,
+    "createdAt": "2025-07-09T17:31:50.228707Z",
+    "updatedAt": "2025-07-09T17:31:50.228707Z",
+    "parentId": null,
+    "isActive": true,
+    "translations": {
+      "en": "Lands & Plots"
+    },
+    "category": {
+      "id": "b1f314c1-5b2a-44e6-9620-c92a86fc4c8e",
+      "name": "Properties"
+    }
+  },
+  {
+    "id": "950ae4d8-b63b-4149-8c5f-6fc75bde8887",
+    "title": "Rent Shops & Offices",
+    "image": null,
+    "description": "Rent Shops & Offices under Properties",
+    "isFeatured": false,
+    "sortOrder": 4,
+    "createdAt": "2025-07-09T17:31:50.228707Z",
+    "updatedAt": "2025-07-09T17:31:50.228707Z",
+    "parentId": null,
+    "isActive": true,
+    "translations": {
+      "en": "Rent Shops & Offices"
+    },
+    "category": {
+      "id": "b1f314c1-5b2a-44e6-9620-c92a86fc4c8e",
+      "name": "Properties"
+    }
+  },
+  {
+    "id": "f62f7fb4-9cf9-4d87-8321-594193014c31",
+    "title": "Sale Shops & Offices",
+    "image": null,
+    "description": "Sale Shops & Offices under Properties",
+    "isFeatured": false,
+    "sortOrder": 5,
+    "createdAt": "2025-07-09T17:31:50.228707Z",
+    "updatedAt": "2025-07-09T17:31:50.228707Z",
+    "parentId": null,
+    "isActive": true,
+    "translations": {
+      "en": "Sale Shops & Offices"
+    },
+    "category": {
+      "id": "b1f314c1-5b2a-44e6-9620-c92a86fc4c8e",
+      "name": "Properties"
+    }
+  },
+  {
+    "id": "f3b63d7c-2d19-4941-9f54-783aff204816",
+    "title": "PG & Guest Houses",
+    "image": null,
+    "description": "PG & Guest Houses under Properties",
+    "isFeatured": false,
+    "sortOrder": 6,
+    "createdAt": "2025-07-09T17:31:50.228707Z",
+    "updatedAt": "2025-07-09T17:31:50.228707Z",
+    "parentId": null,
+    "isActive": true,
+    "translations": {
+      "en": "PG & Guest Houses"
+    },
+    "category": {
+      "id": "b1f314c1-5b2a-44e6-9620-c92a86fc4c8e",
+      "name": "Properties"
+    }
+  },
+  {
+    "id": "7cae0325-6f40-47ce-935e-de54d0a7feb9",
+    "title": "Smartphones",
+    "image": null,
+    "description": "Smartphones under Mobiles",
+    "isFeatured": false,
+    "sortOrder": 1,
+    "createdAt": "2025-07-09T17:31:50.228707Z",
+    "updatedAt": "2025-07-09T17:31:50.228707Z",
+    "parentId": null,
+    "isActive": true,
+    "translations": {
+      "en": "Smartphones"
+    },
+    "category": {
+      "id": "ca113cdf-6ec3-4b86-9642-fb17b7d9f13f",
+      "name": "Mobiles"
+    }
+  },
+  {
+    "id": "b538573b-879d-4703-bbea-97de903edcbc",
+    "title": "Accessories",
+    "image": null,
+    "description": "Accessories under Mobiles",
+    "isFeatured": false,
+    "sortOrder": 2,
+    "createdAt": "2025-07-09T17:31:50.228707Z",
+    "updatedAt": "2025-07-09T17:31:50.228707Z",
+    "parentId": null,
+    "isActive": true,
+    "translations": {
+      "en": "Accessories"
+    },
+    "category": {
+      "id": "ca113cdf-6ec3-4b86-9642-fb17b7d9f13f",
+      "name": "Mobiles"
+    }
+  },
+  {
+    "id": "8007dc1a-da56-4637-b4f2-f1bacd70a6e3",
+    "title": "Tablets",
+    "image": null,
+    "description": "Tablets under Mobiles",
+    "isFeatured": false,
+    "sortOrder": 3,
+    "createdAt": "2025-07-09T17:31:50.228707Z",
+    "updatedAt": "2025-07-09T17:31:50.228707Z",
+    "parentId": null,
+    "isActive": true,
+    "translations": {
+      "en": "Tablets"
+    },
+    "category": {
+      "id": "ca113cdf-6ec3-4b86-9642-fb17b7d9f13f",
+      "name": "Mobiles"
+    }
+  },
+  {
+    "id": "341365be-33b3-40e2-92be-4cbc8257e272",
+    "title": "Data Entry",
+    "image": null,
+    "description": "Data Entry under Jobs",
+    "isFeatured": false,
+    "sortOrder": 1,
+    "createdAt": "2025-07-09T17:31:50.228707Z",
+    "updatedAt": "2025-07-09T17:31:50.228707Z",
+    "parentId": null,
+    "isActive": true,
+    "translations": {
+      "en": "Data Entry"
+    },
+    "category": {
+      "id": "1770a635-92cb-41bc-badd-e26d9d7ef3c3",
+      "name": "Jobs"
+    }
+  },
+  {
+    "id": "cfd7e19f-f9e0-45cb-9c32-8254c49395b1",
+    "title": "Delivery",
+    "image": null,
+    "description": "Delivery under Jobs",
+    "isFeatured": false,
+    "sortOrder": 2,
+    "createdAt": "2025-07-09T17:31:50.228707Z",
+    "updatedAt": "2025-07-09T17:31:50.228707Z",
+    "parentId": null,
+    "isActive": true,
+    "translations": {
+      "en": "Delivery"
+    },
+    "category": {
+      "id": "1770a635-92cb-41bc-badd-e26d9d7ef3c3",
+      "name": "Jobs"
+    }
+  },
+  {
+    "id": "f1b3e0d4-cae1-467f-afef-055772da79ca",
+    "title": "Customer Support",
+    "image": null,
+    "description": "Customer Support under Jobs",
+    "isFeatured": false,
+    "sortOrder": 3,
+    "createdAt": "2025-07-09T17:31:50.228707Z",
+    "updatedAt": "2025-07-09T17:31:50.228707Z",
+    "parentId": null,
+    "isActive": true,
+    "translations": {
+      "en": "Customer Support"
+    },
+    "category": {
+      "id": "1770a635-92cb-41bc-badd-e26d9d7ef3c3",
+      "name": "Jobs"
+    }
+  },
+  {
+    "id": "5ccb6269-2ace-4839-8769-845ef5c677a8",
+    "title": "IT",
+    "image": null,
+    "description": "IT under Jobs",
+    "isFeatured": false,
+    "sortOrder": 4,
+    "createdAt": "2025-07-09T17:31:50.228707Z",
+    "updatedAt": "2025-07-09T17:31:50.228707Z",
+    "parentId": null,
+    "isActive": true,
+    "translations": {
+      "en": "IT"
+    },
+    "category": {
+      "id": "1770a635-92cb-41bc-badd-e26d9d7ef3c3",
+      "name": "Jobs"
+    }
+  },
+  {
+    "id": "f32e8c23-95d2-49f5-a549-7b22b9cfad5f",
+    "title": "Sales",
+    "image": null,
+    "description": "Sales under Jobs",
+    "isFeatured": false,
+    "sortOrder": 5,
+    "createdAt": "2025-07-09T17:31:50.228707Z",
+    "updatedAt": "2025-07-09T17:31:50.228707Z",
+    "parentId": null,
+    "isActive": true,
+    "translations": {
+      "en": "Sales"
+    },
+    "category": {
+      "id": "1770a635-92cb-41bc-badd-e26d9d7ef3c3",
+      "name": "Jobs"
+    }
+  },
+  {
+    "id": "46d08df7-0b4a-425b-ac53-a62ff9385804",
+    "title": "TV",
+    "image": null,
+    "description": "TV under Electronic & Appliances",
+    "isFeatured": false,
+    "sortOrder": 1,
+    "createdAt": "2025-07-09T17:31:50.228707Z",
+    "updatedAt": "2025-07-09T17:31:50.228707Z",
+    "parentId": null,
+    "isActive": true,
+    "translations": {
+      "en": "TV"
+    },
+    "category": {
+      "id": "44d4e1b0-5fb6-4f6d-b87e-8fcf37f0f92a",
+      "name": "Electronic & Appliances"
+    }
+  },
+  {
+    "id": "5aa197cf-d972-438f-a207-e7a53607f4e4",
+    "title": "AC",
+    "image": null,
+    "description": "AC under Electronic & Appliances",
+    "isFeatured": false,
+    "sortOrder": 2,
+    "createdAt": "2025-07-09T17:31:50.228707Z",
+    "updatedAt": "2025-07-09T17:31:50.228707Z",
+    "parentId": null,
+    "isActive": true,
+    "translations": {
+      "en": "AC"
+    },
+    "category": {
+      "id": "44d4e1b0-5fb6-4f6d-b87e-8fcf37f0f92a",
+      "name": "Electronic & Appliances"
+    }
+  },
+  {
+    "id": "14bb324d-99aa-49b9-aa8d-78e19d4e22df",
+    "title": "Fridge",
+    "image": null,
+    "description": "Fridge under Electronic & Appliances",
+    "isFeatured": false,
+    "sortOrder": 3,
+    "createdAt": "2025-07-09T17:31:50.228707Z",
+    "updatedAt": "2025-07-09T17:31:50.228707Z",
+    "parentId": null,
+    "isActive": true,
+    "translations": {
+      "en": "Fridge"
+    },
+    "category": {
+      "id": "44d4e1b0-5fb6-4f6d-b87e-8fcf37f0f92a",
+      "name": "Electronic & Appliances"
+    }
+  },
+  {
+    "id": "7320ef4b-c2e6-4592-a270-b4e59f0b71f2",
+    "title": "Others",
+    "image": null,
+    "description": "Others under Electronic & Appliances",
+    "isFeatured": false,
+    "sortOrder": 4,
+    "createdAt": "2025-07-09T17:31:50.228707Z",
+    "updatedAt": "2025-07-09T17:31:50.228707Z",
+    "parentId": null,
+    "isActive": true,
+    "translations": {
+      "en": "Others"
+    },
+    "category": {
+      "id": "44d4e1b0-5fb6-4f6d-b87e-8fcf37f0f92a",
+      "name": "Electronic & Appliances"
+    }
+  },
+  {
+    "id": "f365c7fc-77b1-4671-86e4-75f5475f3dea",
+    "title": "Trucks",
+    "image": null,
+    "description": "Trucks under Commercial Vehicles & Spares",
+    "isFeatured": false,
+    "sortOrder": 1,
+    "createdAt": "2025-07-09T17:31:50.228707Z",
+    "updatedAt": "2025-07-09T17:31:50.228707Z",
+    "parentId": null,
+    "isActive": true,
+    "translations": {
+      "en": "Trucks"
+    },
+    "category": {
+      "id": "ff47339d-6d5d-4bfb-a79d-3017e8ff2327",
+      "name": "Commercial Vehicles & Spares"
+    }
+  },
+  {
+    "id": "5d3495de-ee93-4353-9b31-61a4b679ab13",
+    "title": "Spare Parts",
+    "image": null,
+    "description": "Spare Parts under Commercial Vehicles & Spares",
+    "isFeatured": false,
+    "sortOrder": 2,
+    "createdAt": "2025-07-09T17:31:50.228707Z",
+    "updatedAt": "2025-07-09T17:31:50.228707Z",
+    "parentId": null,
+    "isActive": true,
+    "translations": {
+      "en": "Spare Parts"
+    },
+    "category": {
+      "id": "2d2efb2a-0dc6-46bb-b403-6a4e51955a18",
+      "name": "Commercial Vehicles & Spares"
+    }
+  },
+  {
+    "id": "08a0ba54-3ea9-453c-9e9a-ce4fb04705eb",
+    "title": "Others",
+    "image": null,
+    "description": "Others under Commercial Vehicles & Spares",
+    "isFeatured": false,
+    "sortOrder": 3,
+    "createdAt": "2025-07-09T17:31:50.228707Z",
+    "updatedAt": "2025-07-09T17:31:50.228707Z",
+    "parentId": null,
+    "isActive": true,
+    "translations": {
+      "en": "Others"
+    },
+    "category": {
+      "id": "2d2efb2a-0dc6-46bb-b403-6a4e51955a18",
+      "name": "Commercial Vehicles & Spares"
+    }
+  },
+  {
+    "id": "27f7fd26-f1f3-471e-9125-bbe5960b882b",
+    "title": "Sofa",
+    "image": null,
+    "description": "Sofa under Furniture",
+    "isFeatured": false,
+    "sortOrder": 1,
+    "createdAt": "2025-07-09T17:31:50.228707Z",
+    "updatedAt": "2025-07-09T17:31:50.228707Z",
+    "parentId": null,
+    "isActive": true,
+    "translations": {
+      "en": "Sofa"
+    },
+    "category": {
+      "id": "2c582f0a-ef55-42c7-a2b4-130219f609d9",
+      "name": "Furniture"
+    }
+  },
+  {
+    "id": "d6df7391-159d-48a8-a03e-b1fe304b6609",
+    "title": "Bed",
+    "image": null,
+    "description": "Bed under Furniture",
+    "isFeatured": false,
+    "sortOrder": 2,
+    "createdAt": "2025-07-09T17:31:50.228707Z",
+    "updatedAt": "2025-07-09T17:31:50.228707Z",
+    "parentId": null,
+    "isActive": true,
+    "translations": {
+      "en": "Bed"
+    },
+    "category": {
+      "id": "2c582f0a-ef55-42c7-a2b4-130219f609d9",
+      "name": "Furniture"
+    }
+  },
+  {
+    "id": "344974ca-8c80-40cf-a8c2-bd60fa1d1e50",
+    "title": "Chairs",
+    "image": null,
+    "description": "Chairs under Furniture",
+    "isFeatured": false,
+    "sortOrder": 3,
+    "createdAt": "2025-07-09T17:31:50.228707Z",
+    "updatedAt": "2025-07-09T17:31:50.228707Z",
+    "parentId": null,
+    "isActive": true,
+    "translations": {
+      "en": "Chairs"
+    },
+    "category": {
+      "id": "2c582f0a-ef55-42c7-a2b4-130219f609d9",
+      "name": "Furniture"
+    }
+  },
+  {
+    "id": "806454c7-be07-44c6-be38-2805a031f1a1",
+    "title": "Storage",
+    "image": null,
+    "description": "Storage under Furniture",
+    "isFeatured": false,
+    "sortOrder": 4,
+    "createdAt": "2025-07-09T17:31:50.228707Z",
+    "updatedAt": "2025-07-09T17:31:50.228707Z",
+    "parentId": null,
+    "isActive": true,
+    "translations": {
+      "en": "Storage"
+    },
+    "category": {
+      "id": "2c582f0a-ef55-42c7-a2b4-130219f609d9",
+      "name": "Furniture"
+    }
+  },
+  {
+    "id": "19e40eda-adee-4cce-9c2e-9ff19b691903",
+    "title": "Others",
+    "image": null,
+    "description": "Others under Furniture",
+    "isFeatured": false,
+    "sortOrder": 5,
+    "createdAt": "2025-07-09T17:31:50.228707Z",
+    "updatedAt": "2025-07-09T17:31:50.228707Z",
+    "parentId": null,
+    "isActive": true,
+    "translations": {
+      "en": "Others"
+    },
+    "category": {
+      "id": "2c582f0a-ef55-42c7-a2b4-130219f609d9",
+      "name": "Furniture"
+    }
+  },
+  {
+    "id": "e1b6faaa-766f-46f7-a9a1-08297b3bc5df",
+    "title": "Men",
+    "image": null,
+    "description": "Men under Fashion",
+    "isFeatured": false,
+    "sortOrder": 1,
+    "createdAt": "2025-07-09T17:31:50.228707Z",
+    "updatedAt": "2025-07-09T17:31:50.228707Z",
+    "parentId": null,
+    "isActive": true,
+    "translations": {
+      "en": "Men"
+    },
+    "category": {
+      "id": "64dc5d57-e254-4294-8e52-8ab30e6f5a06",
+      "name": "Fashion"
+    }
+  },
+  {
+    "id": "4e88c61c-0595-4a59-8584-0e9283b2ef1c",
+    "title": "Women",
+    "image": null,
+    "description": "Women under Fashion",
+    "isFeatured": false,
+    "sortOrder": 2,
+    "createdAt": "2025-07-09T17:31:50.228707Z",
+    "updatedAt": "2025-07-09T17:31:50.228707Z",
+    "parentId": null,
+    "isActive": true,
+    "translations": {
+      "en": "Women"
+    },
+    "category": {
+      "id": "64dc5d57-e254-4294-8e52-8ab30e6f5a06",
+      "name": "Fashion"
+    }
+  },
+  {
+    "id": "ecf9e5bd-5bda-4036-b8d2-f9ced8a5aecb",
+    "title": "Kids",
+    "image": null,
+    "description": "Kids under Fashion",
+    "isFeatured": false,
+    "sortOrder": 3,
+    "createdAt": "2025-07-09T17:31:50.228707Z",
+    "updatedAt": "2025-07-09T17:31:50.228707Z",
+    "parentId": null,
+    "isActive": true,
+    "translations": {
+      "en": "Kids"
+    },
+    "category": {
+      "id": "64dc5d57-e254-4294-8e52-8ab30e6f5a06",
+      "name": "Fashion"
+    }
+  },
+  {
+    "id": "d47beb39-e6ea-4e31-b903-c8484ac84e9b",
+    "title": "Accessories",
+    "image": null,
+    "description": "Accessories under Fashion",
+    "isFeatured": false,
+    "sortOrder": 4,
+    "createdAt": "2025-07-09T17:31:50.228707Z",
+    "updatedAt": "2025-07-09T17:31:50.228707Z",
+    "parentId": null,
+    "isActive": true,
+    "translations": {
+      "en": "Accessories"
+    },
+    "category": {
+      "id": "64dc5d57-e254-4294-8e52-8ab30e6f5a06",
+      "name": "Fashion"
+    }
+  },
+  {
+    "id": "a1a1a411-3592-4505-8f20-bb3cd424feef",
+    "title": "Books",
+    "image": null,
+    "description": "Books under Books Sports & Hobbies",
+    "isFeatured": false,
+    "sortOrder": 1,
+    "createdAt": "2025-07-09T17:31:50.228707Z",
+    "updatedAt": "2025-07-09T17:31:50.228707Z",
+    "parentId": null,
+    "isActive": true,
+    "translations": {
+      "en": "Books"
+    },
+    "category": {
+      "id": "8934f83d-98dc-46e2-9b57-9dbf2adba7f4",
+      "name": "Books Sports & Hobbies"
+    }
+  },
+  {
+    "id": "d6766a2a-964f-43d1-8be5-b6c9ddedaabd",
+    "title": "Music",
+    "image": null,
+    "description": "Music under Books Sports & Hobbies",
+    "isFeatured": false,
+    "sortOrder": 2,
+    "createdAt": "2025-07-09T17:31:50.228707Z",
+    "updatedAt": "2025-07-09T17:31:50.228707Z",
+    "parentId": null,
+    "isActive": true,
+    "translations": {
+      "en": "Music"
+    },
+    "category": {
+      "id": "8934f83d-98dc-46e2-9b57-9dbf2adba7f4",
+      "name": "Books Sports & Hobbies"
+    }
+  },
+  {
+    "id": "cbc67dfb-a033-4fc8-aa00-3e5505c1ee6d",
+    "title": "Sports",
+    "image": null,
+    "description": "Sports under Books Sports & Hobbies",
+    "isFeatured": false,
+    "sortOrder": 3,
+    "createdAt": "2025-07-09T17:31:50.228707Z",
+    "updatedAt": "2025-07-09T17:31:50.228707Z",
+    "parentId": null,
+    "isActive": true,
+    "translations": {
+      "en": "Sports"
+    },
+    "category": {
+      "id": "8934f83d-98dc-46e2-9b57-9dbf2adba7f4",
+      "name": "Books Sports & Hobbies"
+    }
+  },
+  {
+    "id": "dda7d934-a646-4e53-a71a-031100ce26a5",
+    "title": "Crafts",
+    "image": null,
+    "description": "Crafts under Books Sports & Hobbies",
+    "isFeatured": false,
+    "sortOrder": 4,
+    "createdAt": "2025-07-09T17:31:50.228707Z",
+    "updatedAt": "2025-07-09T17:31:50.228707Z",
+    "parentId": null,
+    "isActive": true,
+    "translations": {
+      "en": "Crafts"
+    },
+    "category": {
+      "id": "8934f83d-98dc-46e2-9b57-9dbf2adba7f4",
+      "name": "Books Sports & Hobbies"
+    }
+  },
+  {
+    "id": "ac76117c-b896-4afa-9542-975cfff772cf",
+    "title": "Dogs",
+    "image": null,
+    "description": "Dogs under Pets",
+    "isFeatured": false,
+    "sortOrder": 1,
+    "createdAt": "2025-07-09T17:31:50.228707Z",
+    "updatedAt": "2025-07-09T17:31:50.228707Z",
+    "parentId": null,
+    "isActive": true,
+    "translations": {
+      "en": "Dogs"
+    },
+    "category": {
+      "id": "0d129fd5-99f4-45f5-8a0a-51e612fefc2b",
+      "name": "Pets"
+    }
+  },
+  {
+    "id": "2cc59a92-62db-43f0-bc88-89862edb9c97",
+    "title": "Cats",
+    "image": null,
+    "description": "Cats under Pets",
+    "isFeatured": false,
+    "sortOrder": 2,
+    "createdAt": "2025-07-09T17:31:50.228707Z",
+    "updatedAt": "2025-07-09T17:31:50.228707Z",
+    "parentId": null,
+    "isActive": true,
+    "translations": {
+      "en": "Cats"
+    },
+    "category": {
+      "id": "0d129fd5-99f4-45f5-8a0a-51e612fefc2b",
+      "name": "Pets"
+    }
+  },
+  {
+    "id": "a45332e2-7b40-4df9-aa1f-0a802e19970e",
+    "title": "Birds",
+    "image": null,
+    "description": "Birds under Pets",
+    "isFeatured": false,
+    "sortOrder": 3,
+    "createdAt": "2025-07-09T17:31:50.228707Z",
+    "updatedAt": "2025-07-09T17:31:50.228707Z",
+    "parentId": null,
+    "isActive": true,
+    "translations": {
+      "en": "Birds"
+    },
+    "category": {
+      "id": "0d129fd5-99f4-45f5-8a0a-51e612fefc2b",
+      "name": "Pets"
+    }
+  },
+  {
+    "id": "7b56bb9e-f286-47d1-b50f-7cfabdc894be",
+    "title": "Accessories",
+    "image": null,
+    "description": "Accessories under Pets",
+    "isFeatured": false,
+    "sortOrder": 4,
+    "createdAt": "2025-07-09T17:31:50.228707Z",
+    "updatedAt": "2025-07-09T17:31:50.228707Z",
+    "parentId": null,
+    "isActive": true,
+    "translations": {
+      "en": "Accessories"
+    },
+    "category": {
+      "id": "0d129fd5-99f4-45f5-8a0a-51e612fefc2b",
+      "name": "Pets"
+    }
+  },
+  {
+    "id": "3a072a83-bfa3-4771-8c6c-6e01dc0ea6e4",
+    "title": "Home Services",
+    "image": null,
+    "description": "Home Services under Services",
+    "isFeatured": false,
+    "sortOrder": 1,
+    "createdAt": "2025-07-09T17:31:50.228707Z",
+    "updatedAt": "2025-07-09T17:31:50.228707Z",
+    "parentId": null,
+    "isActive": true,
+    "translations": {
+      "en": "Home Services"
+    },
+    "category": {
+      "id": "2894a5c2-1d71-4e59-bb89-8a9f54778c3d",
+      "name": "Services"
+    }
+  },
+  {
+    "id": "49ea4e3a-3b9f-4a09-92c8-a6ba5947f18c",
+    "title": "Repair",
+    "image": null,
+    "description": "Repair under Services",
+    "isFeatured": false,
+    "sortOrder": 2,
+    "createdAt": "2025-07-09T17:31:50.228707Z",
+    "updatedAt": "2025-07-09T17:31:50.228707Z",
+    "parentId": null,
+    "isActive": true,
+    "translations": {
+      "en": "Repair"
+    },
+    "category": {
+      "id": "2fbe5cf5-349f-4b1c-90b8-9b36ffda4967",
+      "name": "Services"
+    }
+  },
+  {
+    "id": "3b6b900b-4a5d-40c2-9966-64cad27ac220",
+    "title": "Packers",
+    "image": null,
+    "description": "Packers under Services",
+    "isFeatured": false,
+    "sortOrder": 3,
+    "createdAt": "2025-07-09T17:31:50.228707Z",
+    "updatedAt": "2025-07-09T17:31:50.228707Z",
+    "parentId": null,
+    "isActive": true,
+    "translations": {
+      "en": "Packers"
+    },
+    "category": {
+      "id": "2fbe5cf5-349f-4b1c-90b8-9b36ffda4967",
+      "name": "Services"
+    }
+  },
+  {
+    "id": "7aa346b5-7453-462c-b129-e4579d235d54",
+    "title": "Others",
+    "image": null,
+    "description": "Others under Services",
+    "isFeatured": false,
+    "sortOrder": 4,
+    "createdAt": "2025-07-09T17:31:50.228707Z",
+    "updatedAt": "2025-07-09T17:31:50.228707Z",
+    "parentId": null,
+    "isActive": true,
+    "translations": {
+      "en": "Others"
+    },
+    "category": {
+      "id": "2fbe5cf5-349f-4b1c-90b8-9b36ffda4967",
+      "name": "Services"
+    }
+  }
+]

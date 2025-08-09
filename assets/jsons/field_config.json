@@ -1,0 +1,146 @@
+[
+  {
+    "label": "Type",
+    "type": "select",
+    "required": true,
+    "active": true,
+    "options": ["Rent", "Sale"],
+    "sortOrder": 0,
+    "category": {
+      "id": "b1f314c1-5b2a-44e6-9620-c92a86fc4c8e",
+      "name": "Properties"
+    },
+    "subCategory": {
+      "id": "2351c91f-9b4e-4241-a28a-5f78b3d59fcd",
+      "name": "Lands & Plots"
+    }
+  },
+  {
+    "label": "Listed by",
+    "type": "dropdown",
+    "required": true,
+    "active": true,
+    "options": ["Owner", "Dealer", "Builder"],
+    "sortOrder": 1,
+    "category": {
+      "id": "b1f314c1-5b2a-44e6-9620-c92a86fc4c8e",
+      "name": "Properties"
+    },
+    "subCategory": {
+      "id": "2351c91f-9b4e-4241-a28a-5f78b3d59fcd",
+      "name": "Lands & Plots"
+    }
+  },
+  {
+    "label": "Plot Area",
+    "type": "select",
+    "required": true,
+    "active": true,
+    "options": ["sq ft", "sq yards", "sq meters", "acres"],
+    "sortOrder": 2,
+    "category": {
+      "id": "b1f314c1-5b2a-44e6-9620-c92a86fc4c8e",
+      "name": "Properties"
+    },
+    "subCategory": {
+      "id": "2351c91f-9b4e-4241-a28a-5f78b3d59fcd",
+      "name": "Lands & Plots"
+    }
+  },
+  {
+    "label": "Length",
+    "type": "number",
+    "required": true,
+    "active": true,
+    "options": ["ft", "m"],
+    "sortOrder": 3,
+    "category": {
+      "id": "b1f314c1-5b2a-44e6-9620-c92a86fc4c8e",
+      "name": "Properties"
+    },
+    "subCategory": {
+      "id": "2351c91f-9b4e-4241-a28a-5f78b3d59fcd",
+      "name": "Lands & Plots"
+    }
+  },
+  {
+    "label": "Breadth",
+    "type": "number",
+    "required": true,
+    "active": true,
+    "options": ["ft", "m"],
+    "sortOrder": 4,
+    "category": {
+      "id": "b1f314c1-5b2a-44e6-9620-c92a86fc4c8e",
+      "name": "Properties"
+    },
+    "subCategory": {
+      "id": "2351c91f-9b4e-4241-a28a-5f78b3d59fcd",
+      "name": "Lands & Plots"
+    }
+  },
+  {
+    "label": "Facing",
+    "type": "select",
+    "required": true,
+    "active": true,
+    "options": ["North", "South", "East", "West", "North-East", "North-West", "South-East", "South-West"],
+    "sortOrder": 5,
+    "category": {
+      "id": "b1f314c1-5b2a-44e6-9620-c92a86fc4c8e",
+      "name": "Properties"
+    },
+    "subCategory": {
+      "id": "2351c91f-9b4e-4241-a28a-5f78b3d59fcd",
+      "name": "Lands & Plots"
+    }
+  },
+  {
+    "label": "Project Name",
+    "type": "text",
+    "required": true,
+    "active": true,
+    "options": null,
+    "sortOrder": 6,
+    "category": {
+      "id": "b1f314c1-5b2a-44e6-9620-c92a86fc4c8e",
+      "name": "Properties"
+    },
+    "subCategory": {
+      "id": "2351c91f-9b4e-4241-a28a-5f78b3d59fcd",
+      "name": "Lands & Plots"
+    }
+  },
+  {
+    "label": "Ad Title",
+    "type": "text",
+    "required": true,
+    "active": true,
+    "options": null,
+    "sortOrder": 7,
+    "category": {
+      "id": "b1f314c1-5b2a-44e6-9620-c92a86fc4c8e",
+      "name": "Properties"
+    },
+    "subCategory": {
+      "id": "2351c91f-9b4e-4241-a28a-5f78b3d59fcd",
+      "name": "Lands & Plots"
+    }
+  },
+  {
+    "label": "Describe what you are selling",
+    "type": "textarea",
+    "required": true,
+    "active": true,
+    "options": null,
+    "sortOrder": 8,
+    "category": {
+      "id": "b1f314c1-5b2a-44e6-9620-c92a86fc4c8e",
+      "name": "Properties"
+    },
+    "subCategory": {
+      "id": "2351c91f-9b4e-4241-a28a-5f78b3d59fcd",
+      "name": "Lands & Plots"
+    }
+  }
+]

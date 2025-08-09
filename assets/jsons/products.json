@@ -1,0 +1,675 @@
+[
+  {
+    "id": "cars_1",
+    "title": "Cars Product 1",
+    "description": "This is a sample product 1 in Cars.",
+    "price": 1000,
+    "images": [
+      "https://example.com/cars_1.jpg"
+    ],
+    "categoryId": "d4735e3a-265e-4f70-a325-7c123f1e91fc",
+    "subCategoryId": null,
+    "location": "Sample City",
+    "latitude": 20.5937,
+    "longitude": 78.9629,
+    "userId": "user_0",
+    "userPhone": "900000000",
+    "isNegotiable": false,
+    "condition": "New",
+    "isFeatured": false,
+    "status": "active",
+    "createdTimeStamp": "2025-07-13T17:55:32Z",
+    "updatedTimeStamp": "2025-07-13T17:55:32Z",
+    "views": 10,
+    "likes": 0,
+    "attributes": {
+      "Sample Attribute": "Value 1",
+      "Another Detail": "Detail 0"
+    }
+  },
+  {
+    "id": "cars_2",
+    "title": "Cars Product 2",
+    "description": "This is a sample product 2 in Cars.",
+    "price": 2000,
+    "images": [
+      "https://example.com/cars_2.jpg"
+    ],
+    "categoryId": "d4735e3a-265e-4f70-a325-7c123f1e91fc",
+    "subCategoryId": null,
+    "location": "Sample City",
+    "latitude": 20.5937,
+    "longitude": 78.9629,
+    "userId": "user_0",
+    "userPhone": "900000001",
+    "isNegotiable": true,
+    "condition": "Used",
+    "isFeatured": true,
+    "status": "active",
+    "createdTimeStamp": "2025-07-13T17:55:32Z",
+    "updatedTimeStamp": "2025-07-13T17:55:32Z",
+    "views": 20,
+    "likes": 2,
+    "attributes": {
+      "Sample Attribute": "Value 2",
+      "Another Detail": "Detail 1"
+    }
+  },
+  {
+    "id": "properties_1",
+    "title": "Properties Product 1",
+    "description": "This is a sample product 1 in Properties.",
+    "price": 1500,
+    "images": [
+      "https://example.com/properties_1.jpg"
+    ],
+    "categoryId": "b1f314c1-5b2a-44e6-9620-c92a86fc4c8e",
+    "subCategoryId": null,
+    "location": "Sample City",
+    "latitude": 20.5937,
+    "longitude": 78.9629,
+    "userId": "user_1",
+    "userPhone": "900000001",
+    "isNegotiable": false,
+    "condition": "New",
+    "isFeatured": true,
+    "status": "active",
+    "createdTimeStamp": "2025-07-13T17:55:32Z",
+    "updatedTimeStamp": "2025-07-13T17:55:32Z",
+    "views": 10,
+    "likes": 0,
+    "attributes": {
+      "Sample Attribute": "Value 1",
+      "Another Detail": "Detail 1"
+    }
+  },
+  {
+    "id": "properties_2",
+    "title": "Properties Product 2",
+    "description": "This is a sample product 2 in Properties.",
+    "price": 2500,
+    "images": [
+      "https://example.com/properties_2.jpg"
+    ],
+    "categoryId": "b1f314c1-5b2a-44e6-9620-c92a86fc4c8e",
+    "subCategoryId": null,
+    "location": "Sample City",
+    "latitude": 20.5937,
+    "longitude": 78.9629,
+    "userId": "user_1",
+    "userPhone": "900000002",
+    "isNegotiable": true,
+    "condition": "Used",
+    "isFeatured": false,
+    "status": "active",
+    "createdTimeStamp": "2025-07-13T17:55:32Z",
+    "updatedTimeStamp": "2025-07-13T17:55:32Z",
+    "views": 20,
+    "likes": 2,
+    "attributes": {
+      "Sample Attribute": "Value 2",
+      "Another Detail": "Detail 2"
+    }
+  },
+  {
+    "id": "mobiles_1",
+    "title": "Mobiles Product 1",
+    "description": "This is a sample product 1 in Mobiles.",
+    "price": 2000,
+    "images": [
+      "https://example.com/mobiles_1.jpg"
+    ],
+    "categoryId": "ca113cdf-6ec3-4b86-9642-fb17b7d9f13f",
+    "subCategoryId": null,
+    "location": "Sample City",
+    "latitude": 20.5937,
+    "longitude": 78.9629,
+    "userId": "user_2",
+    "userPhone": "900000002",
+    "isNegotiable": false,
+    "condition": "New",
+    "isFeatured": false,
+    "status": "active",
+    "createdTimeStamp": "2025-07-13T17:55:32Z",
+    "updatedTimeStamp": "2025-07-13T17:55:32Z",
+    "views": 10,
+    "likes": 0,
+    "attributes": {
+      "Sample Attribute": "Value 1",
+      "Another Detail": "Detail 2"
+    }
+  },
+  {
+    "id": "mobiles_2",
+    "title": "Mobiles Product 2",
+    "description": "This is a sample product 2 in Mobiles.",
+    "price": 3000,
+    "images": [
+      "https://example.com/mobiles_2.jpg"
+    ],
+    "categoryId": "ca113cdf-6ec3-4b86-9642-fb17b7d9f13f",
+    "subCategoryId": null,
+    "location": "Sample City",
+    "latitude": 20.5937,
+    "longitude": 78.9629,
+    "userId": "user_2",
+    "userPhone": "900000003",
+    "isNegotiable": true,
+    "condition": "Used",
+    "isFeatured": true,
+    "status": "active",
+    "createdTimeStamp": "2025-07-13T17:55:32Z",
+    "updatedTimeStamp": "2025-07-13T17:55:32Z",
+    "views": 20,
+    "likes": 2,
+    "attributes": {
+      "Sample Attribute": "Value 2",
+      "Another Detail": "Detail 3"
+    }
+  },
+  {
+    "id": "jobs_1",
+    "title": "Jobs Product 1",
+    "description": "This is a sample product 1 in Jobs.",
+    "price": 2500,
+    "images": [
+      "https://example.com/jobs_1.jpg"
+    ],
+    "categoryId": "1770a635-92cb-41bc-badd-e26d9d7ef3c3",
+    "subCategoryId": null,
+    "location": "Sample City",
+    "latitude": 20.5937,
+    "longitude": 78.9629,
+    "userId": "user_3",
+    "userPhone": "900000003",
+    "isNegotiable": false,
+    "condition": "New",
+    "isFeatured": true,
+    "status": "active",
+    "createdTimeStamp": "2025-07-13T17:55:32Z",
+    "updatedTimeStamp": "2025-07-13T17:55:32Z",
+    "views": 10,
+    "likes": 0,
+    "attributes": {
+      "Sample Attribute": "Value 1",
+      "Another Detail": "Detail 3"
+    }
+  },
+  {
+    "id": "jobs_2",
+    "title": "Jobs Product 2",
+    "description": "This is a sample product 2 in Jobs.",
+    "price": 3500,
+    "images": [
+      "https://example.com/jobs_2.jpg"
+    ],
+    "categoryId": "1770a635-92cb-41bc-badd-e26d9d7ef3c3",
+    "subCategoryId": null,
+    "location": "Sample City",
+    "latitude": 20.5937,
+    "longitude": 78.9629,
+    "userId": "user_3",
+    "userPhone": "900000004",
+    "isNegotiable": true,
+    "condition": "Used",
+    "isFeatured": false,
+    "status": "active",
+    "createdTimeStamp": "2025-07-13T17:55:32Z",
+    "updatedTimeStamp": "2025-07-13T17:55:32Z",
+    "views": 20,
+    "likes": 2,
+    "attributes": {
+      "Sample Attribute": "Value 2",
+      "Another Detail": "Detail 4"
+    }
+  },
+  {
+    "id": "bikes_1",
+    "title": "Bikes Product 1",
+    "description": "This is a sample product 1 in Bikes.",
+    "price": 3000,
+    "images": [
+      "https://example.com/bikes_1.jpg"
+    ],
+    "categoryId": "917778c4-3a9b-4562-8ec1-b8b0485a05a0",
+    "subCategoryId": null,
+    "location": "Sample City",
+    "latitude": 20.5937,
+    "longitude": 78.9629,
+    "userId": "user_4",
+    "userPhone": "900000004",
+    "isNegotiable": false,
+    "condition": "New",
+    "isFeatured": false,
+    "status": "active",
+    "createdTimeStamp": "2025-07-13T17:55:32Z",
+    "updatedTimeStamp": "2025-07-13T17:55:32Z",
+    "views": 10,
+    "likes": 0,
+    "attributes": {
+      "Sample Attribute": "Value 1",
+      "Another Detail": "Detail 4"
+    }
+  },
+  {
+    "id": "bikes_2",
+    "title": "Bikes Product 2",
+    "description": "This is a sample product 2 in Bikes.",
+    "price": 4000,
+    "images": [
+      "https://example.com/bikes_2.jpg"
+    ],
+    "categoryId": "917778c4-3a9b-4562-8ec1-b8b0485a05a0",
+    "subCategoryId": null,
+    "location": "Sample City",
+    "latitude": 20.5937,
+    "longitude": 78.9629,
+    "userId": "user_4",
+    "userPhone": "900000005",
+    "isNegotiable": true,
+    "condition": "Used",
+    "isFeatured": true,
+    "status": "active",
+    "createdTimeStamp": "2025-07-13T17:55:32Z",
+    "updatedTimeStamp": "2025-07-13T17:55:32Z",
+    "views": 20,
+    "likes": 2,
+    "attributes": {
+      "Sample Attribute": "Value 2",
+      "Another Detail": "Detail 5"
+    }
+  },
+  {
+    "id": "electronic_&_appliances_1",
+    "title": "Electronic & Appliances Product 1",
+    "description": "This is a sample product 1 in Electronic & Appliances.",
+    "price": 3500,
+    "images": [
+      "https://example.com/electronic_&_appliances_1.jpg"
+    ],
+    "categoryId": "44d4e1b0-5fb6-4f6d-b87e-8fcf37f0f92a",
+    "subCategoryId": null,
+    "location": "Sample City",
+    "latitude": 20.5937,
+    "longitude": 78.9629,
+    "userId": "user_5",
+    "userPhone": "900000005",
+    "isNegotiable": false,
+    "condition": "New",
+    "isFeatured": true,
+    "status": "active",
+    "createdTimeStamp": "2025-07-13T17:55:32Z",
+    "updatedTimeStamp": "2025-07-13T17:55:32Z",
+    "views": 10,
+    "likes": 0,
+    "attributes": {
+      "Sample Attribute": "Value 1",
+      "Another Detail": "Detail 5"
+    }
+  },
+  {
+    "id": "electronic_&_appliances_2",
+    "title": "Electronic & Appliances Product 2",
+    "description": "This is a sample product 2 in Electronic & Appliances.",
+    "price": 4500,
+    "images": [
+      "https://example.com/electronic_&_appliances_2.jpg"
+    ],
+    "categoryId": "44d4e1b0-5fb6-4f6d-b87e-8fcf37f0f92a",
+    "subCategoryId": null,
+    "location": "Sample City",
+    "latitude": 20.5937,
+    "longitude": 78.9629,
+    "userId": "user_5",
+    "userPhone": "900000006",
+    "isNegotiable": true,
+    "condition": "Used",
+    "isFeatured": false,
+    "status": "active",
+    "createdTimeStamp": "2025-07-13T17:55:32Z",
+    "updatedTimeStamp": "2025-07-13T17:55:32Z",
+    "views": 20,
+    "likes": 2,
+    "attributes": {
+      "Sample Attribute": "Value 2",
+      "Another Detail": "Detail 6"
+    }
+  },
+  {
+    "id": "commercial_vehicles_&_spares_1",
+    "title": "Commercial Vehicles & Spares Product 1",
+    "description": "This is a sample product 1 in Commercial Vehicles & Spares.",
+    "price": 4000,
+    "images": [
+      "https://example.com/commercial_vehicles_&_spares_1.jpg"
+    ],
+    "categoryId": "2d2efb2a-0dc6-46bb-b403-6a4e51955a18",
+    "subCategoryId": null,
+    "location": "Sample City",
+    "latitude": 20.5937,
+    "longitude": 78.9629,
+    "userId": "user_6",
+    "userPhone": "900000006",
+    "isNegotiable": false,
+    "condition": "New",
+    "isFeatured": false,
+    "status": "active",
+    "createdTimeStamp": "2025-07-13T17:55:32Z",
+    "updatedTimeStamp": "2025-07-13T17:55:32Z",
+    "views": 10,
+    "likes": 0,
+    "attributes": {
+      "Sample Attribute": "Value 1",
+      "Another Detail": "Detail 6"
+    }
+  },
+  {
+    "id": "commercial_vehicles_&_spares_2",
+    "title": "Commercial Vehicles & Spares Product 2",
+    "description": "This is a sample product 2 in Commercial Vehicles & Spares.",
+    "price": 5000,
+    "images": [
+      "https://example.com/commercial_vehicles_&_spares_2.jpg"
+    ],
+    "categoryId": "2d2efb2a-0dc6-46bb-b403-6a4e51955a18",
+    "subCategoryId": null,
+    "location": "Sample City",
+    "latitude": 20.5937,
+    "longitude": 78.9629,
+    "userId": "user_6",
+    "userPhone": "900000007",
+    "isNegotiable": true,
+    "condition": "Used",
+    "isFeatured": true,
+    "status": "active",
+    "createdTimeStamp": "2025-07-13T17:55:32Z",
+    "updatedTimeStamp": "2025-07-13T17:55:32Z",
+    "views": 20,
+    "likes": 2,
+    "attributes": {
+      "Sample Attribute": "Value 2",
+      "Another Detail": "Detail 7"
+    }
+  },
+  {
+    "id": "furniture_1",
+    "title": "Furniture Product 1",
+    "description": "This is a sample product 1 in Furniture.",
+    "price": 4500,
+    "images": [
+      "https://example.com/furniture_1.jpg"
+    ],
+    "categoryId": "2c582f0a-ef55-42c7-a2b4-130219f609d9",
+    "subCategoryId": null,
+    "location": "Sample City",
+    "latitude": 20.5937,
+    "longitude": 78.9629,
+    "userId": "user_7",
+    "userPhone": "900000007",
+    "isNegotiable": false,
+    "condition": "New",
+    "isFeatured": true,
+    "status": "active",
+    "createdTimeStamp": "2025-07-13T17:55:32Z",
+    "updatedTimeStamp": "2025-07-13T17:55:32Z",
+    "views": 10,
+    "likes": 0,
+    "attributes": {
+      "Sample Attribute": "Value 1",
+      "Another Detail": "Detail 7"
+    }
+  },
+  {
+    "id": "furniture_2",
+    "title": "Furniture Product 2",
+    "description": "This is a sample product 2 in Furniture.",
+    "price": 5500,
+    "images": [
+      "https://example.com/furniture_2.jpg"
+    ],
+    "categoryId": "2c582f0a-ef55-42c7-a2b4-130219f609d9",
+    "subCategoryId": null,
+    "location": "Sample City",
+    "latitude": 20.5937,
+    "longitude": 78.9629,
+    "userId": "user_7",
+    "userPhone": "900000008",
+    "isNegotiable": true,
+    "condition": "Used",
+    "isFeatured": false,
+    "status": "active",
+    "createdTimeStamp": "2025-07-13T17:55:32Z",
+    "updatedTimeStamp": "2025-07-13T17:55:32Z",
+    "views": 20,
+    "likes": 2,
+    "attributes": {
+      "Sample Attribute": "Value 2",
+      "Another Detail": "Detail 8"
+    }
+  },
+  {
+    "id": "fashion_1",
+    "title": "Fashion Product 1",
+    "description": "This is a sample product 1 in Fashion.",
+    "price": 5000,
+    "images": [
+      "https://example.com/fashion_1.jpg"
+    ],
+    "categoryId": "64dc5d57-e254-4294-8e52-8ab30e6f5a06",
+    "subCategoryId": null,
+    "location": "Sample City",
+    "latitude": 20.5937,
+    "longitude": 78.9629,
+    "userId": "user_8",
+    "userPhone": "900000008",
+    "isNegotiable": false,
+    "condition": "New",
+    "isFeatured": false,
+    "status": "active",
+    "createdTimeStamp": "2025-07-13T17:55:32Z",
+    "updatedTimeStamp": "2025-07-13T17:55:32Z",
+    "views": 10,
+    "likes": 0,
+    "attributes": {
+      "Sample Attribute": "Value 1",
+      "Another Detail": "Detail 8"
+    }
+  },
+  {
+    "id": "fashion_2",
+    "title": "Fashion Product 2",
+    "description": "This is a sample product 2 in Fashion.",
+    "price": 6000,
+    "images": [
+      "https://example.com/fashion_2.jpg"
+    ],
+    "categoryId": "64dc5d57-e254-4294-8e52-8ab30e6f5a06",
+    "subCategoryId": null,
+    "location": "Sample City",
+    "latitude": 20.5937,
+    "longitude": 78.9629,
+    "userId": "user_8",
+    "userPhone": "900000009",
+    "isNegotiable": true,
+    "condition": "Used",
+    "isFeatured": true,
+    "status": "active",
+    "createdTimeStamp": "2025-07-13T17:55:32Z",
+    "updatedTimeStamp": "2025-07-13T17:55:32Z",
+    "views": 20,
+    "likes": 2,
+    "attributes": {
+      "Sample Attribute": "Value 2",
+      "Another Detail": "Detail 9"
+    }
+  },
+  {
+    "id": "books_sports_&_hobbies_1",
+    "title": "Books Sports & Hobbies Product 1",
+    "description": "This is a sample product 1 in Books Sports & Hobbies.",
+    "price": 5500,
+    "images": [
+      "https://example.com/books_sports_&_hobbies_1.jpg"
+    ],
+    "categoryId": "8934f83d-98dc-46e2-9b57-9dbf2adba7f4",
+    "subCategoryId": null,
+    "location": "Sample City",
+    "latitude": 20.5937,
+    "longitude": 78.9629,
+    "userId": "user_9",
+    "userPhone": "900000009",
+    "isNegotiable": false,
+    "condition": "New",
+    "isFeatured": true,
+    "status": "active",
+    "expiresAt": "2025-09-13T17:55:32Z",
+    "createdTimeStamp": "2025-07-13T17:55:32Z",
+    "updatedTimeStamp": "2025-07-13T17:55:32Z",
+    "views": 10,
+    "likes": 0,
+    "attributes": {
+      "Sample Attribute": "Value 1",
+      "Another Detail": "Detail 9"
+    }
+  },
+  {
+    "id": "books_sports_&_hobbies_2",
+    "title": "Books Sports & Hobbies Product 2",
+    "description": "This is a sample product 2 in Books Sports & Hobbies.",
+    "price": 6500,
+    "images": [
+      "https://example.com/books_sports_&_hobbies_2.jpg"
+    ],
+    "categoryId": "8934f83d-98dc-46e2-9b57-9dbf2adba7f4",
+    "subCategoryId": null,
+    "location": "Sample City",
+    "latitude": 20.5937,
+    "longitude": 78.9629,
+    "userId": "user_9",
+    "userPhone": "9000000010",
+    "isNegotiable": true,
+    "condition": "Used",
+    "isFeatured": false,
+    "status": "active",
+    "createdTimeStamp": "2025-07-13T17:55:32Z",
+    "updatedTimeStamp": "2025-07-13T17:55:32Z",
+    "views": 20,
+    "likes": 2,
+    "attributes": {
+      "Sample Attribute": "Value 2",
+      "Another Detail": "Detail 10"
+    }
+  },
+  {
+    "id": "pets_1",
+    "title": "Pets Product 1",
+    "description": "This is a sample product 1 in Pets.",
+    "price": 6000,
+    "images": [
+      "https://example.com/pets_1.jpg"
+    ],
+    "categoryId": "0d129fd5-99f4-45f5-8a0a-51e612fefc2b",
+    "subCategoryId": null,
+    "location": "Sample City",
+    "latitude": 20.5937,
+    "longitude": 78.9629,
+    "userId": "user_10",
+    "userPhone": "9000000010",
+    "isNegotiable": false,
+    "condition": "New",
+    "isFeatured": false,
+    "status": "active",
+    "createdTimeStamp": "2025-07-13T17:55:32Z",
+    "updatedTimeStamp": "2025-07-13T17:55:32Z",
+    "views": 10,
+    "likes": 0,
+    "attributes": {
+      "Sample Attribute": "Value 1",
+      "Another Detail": "Detail 10"
+    }
+  },
+  {
+    "id": "pets_2",
+    "title": "Pets Product 2",
+    "description": "This is a sample product 2 in Pets.",
+    "price": 7000,
+    "images": [
+      "https://example.com/pets_2.jpg"
+    ],
+    "categoryId": "0d129fd5-99f4-45f5-8a0a-51e612fefc2b",
+    "subCategoryId": null,
+    "location": "Sample City",
+    "latitude": 20.5937,
+    "longitude": 78.9629,
+    "userId": "user_10",
+    "userPhone": "9000000011",
+    "isNegotiable": true,
+    "condition": "Used",
+    "isFeatured": true,
+    "status": "active",
+    "createdTimeStamp": "2025-07-13T17:55:32Z",
+    "updatedTimeStamp": "2025-07-13T17:55:32Z",
+    "views": 20,
+    "likes": 2,
+    "attributes": {
+      "Sample Attribute": "Value 2",
+      "Another Detail": "Detail 11"
+    }
+  },
+  {
+    "id": "services_1",
+    "title": "Services Product 1",
+    "description": "This is a sample product 1 in Services.",
+    "price": 6500,
+    "images": [
+      "https://example.com/services_1.jpg"
+    ],
+    "categoryId": "2fbe5cf5-349f-4b1c-90b8-9b36ffda4967",
+    "subCategoryId": null,
+    "location": "Sample City",
+    "latitude": 20.5937,
+    "longitude": 78.9629,
+    "userId": "user_11",
+    "userPhone": "9000000011",
+    "isNegotiable": false,
+    "condition": "New",
+    "isFeatured": true,
+    "status": "active",
+    "createdTimeStamp": "2025-07-13T17:55:32Z",
+    "updatedTimeStamp": "2025-07-13T17:55:32Z",
+    "views": 10,
+    "likes": 0,
+    "attributes": {
+      "Sample Attribute": "Value 1",
+      "Another Detail": "Detail 11"
+    }
+  },
+  {
+    "id": "services_2",
+    "title": "Services Product 2",
+    "description": "This is a sample product 2 in Services.",
+    "price": 7500,
+    "images": [
+      "https://example.com/services_2.jpg"
+    ],
+    "categoryId": "2fbe5cf5-349f-4b1c-90b8-9b36ffda4967",
+    "subCategoryId": null,
+    "location": "Sample City",
+    "latitude": 20.5937,
+    "longitude": 78.9629,
+    "userId": "user_11",
+    "userPhone": "9000000012",
+    "isNegotiable": true,
+    "condition": "Used",
+    "isFeatured": false,
+    "status": "active",
+    "createdTimeStamp": "2025-07-13T17:55:32Z",
+    "updatedTimeStamp": "2025-07-13T17:55:32Z",
+    "views": 20,
+    "likes": 2,
+    "attributes": {
+      "Sample Attribute": "Value 2",
+      "Another Detail": "Detail 12"
+    }
+  }
+]
