@@ -19,7 +19,7 @@ import '../utils/app_strings.dart';
 
 
 
-
+enum Role { buyer, seller }
 
 
 class LoginScreen extends StatefulWidget {
@@ -37,6 +37,7 @@ class _LoginScreenState extends State<LoginScreen> {
   User user = User();
   VendorModel vendor = VendorModel();
   LogInRequest logInRequest = LogInRequest();
+  Role _role = Role.buyer;
 
 
   _LoginScreenState();
@@ -80,13 +81,19 @@ class _LoginScreenState extends State<LoginScreen> {
           if(state.data!=null){
             user = state.data;
             print("success");
-            _navigateToHome();
+            if (user.role?.toLowerCase() == 'user') {
+              _navigateToHome();
+            }
+
           }
         }else if(state.event == "VendorLogInEvent"){
           if(state.data!=null){
             vendor = state.data;
             print("success");
-            _navigateToVendorHome();
+            if (vendor.role?.toLowerCase() == 'vendor')  {
+              _navigateToVendorHome();
+            }
+
           }
         }
 
@@ -114,6 +121,39 @@ class _LoginScreenState extends State<LoginScreen> {
                 crossAxisAlignment: CrossAxisAlignment.stretch,
                 children: <Widget>[
                   //APP BAR
+                  Container(
+                    padding: EdgeInsets.only(left: 16, top: 10,right: 16),
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      children: [
+                        InkWell(
+                            onTap: (){
+                              Navigator.pop(context);
+                            },
+                            child: Icon(Icons.arrow_back)),
+                        InkWell(
+                          onTap: (){
+                           if(_role == Role.buyer){
+                             _navigateToHome();
+                           }else if(_role == Role.seller){
+                             _navigateToVendorHome();
+                           }
+                          },
+                          child: customThemeText(
+                              "Skip",16,
+                              color: AppColors.primary,
+                              fontWeight: FontWeight.w600,
+                              textAlign: TextAlign.right
+
+                          ),
+                        )
+
+                      ],
+                    ),
+                  ),
+                  VerticalSpace(height: 20,),
+                  _buildRoleToggle(),
+
 
                   //BODY
                   Expanded(
@@ -128,157 +168,97 @@ class _LoginScreenState extends State<LoginScreen> {
                           child: Column(
                             crossAxisAlignment: CrossAxisAlignment.stretch,
                             children: <Widget>[
-                              VerticalSpace(height: deviceHeight(context)*0.10,),
+                              VerticalSpace(height: 10,),
                               Column(
                                 crossAxisAlignment: CrossAxisAlignment.start,
                                 children:  [
                                   //BODY WIDGETS
-                                  SizedBox(height: 12),
-                                  Center(
-                                    child: Column(
-                                      children: [
-                                        SizedBox(height: 24),
-                                        Text(
-                                          "Welcome Back",
-                                          style: TextStyle(
-                                            color: AppColors.black,
-                                            fontWeight: FontWeight.w800,
-                                            fontSize: 32,
-                                          ),
+                                  VerticalSpace(height: 20),
+                                  customThemeText(
+                                    "Welcome Back ! \nSign In To Continue",24,
+                                    color: AppColors.black,
+                                    fontWeight: FontWeight.w700,
+                                  ),
+                                  VerticalSpace(height: 36),
+                                  customThemeText(
+                                    "Your Mobile Number",16,
+                                    color: AppColors.black,
+                                    fontWeight: FontWeight.w700,
+
+                                  ),
+                                  VerticalSpace(height: 10),
+                                  Row(
+                                    children: [
+                                      Container(
+                                        decoration: BoxDecoration(
+                                            borderRadius: BorderRadius.circular(8),
+                                          border: Border.all(width: 0.5,color: AppColors.black)
                                         ),
-                                        SizedBox(height: 12),
-                                        Text(
-                                          "Sign in to your buyer account",
-                                          style: TextStyle(
-                                            color: AppColors.black,
-                                            fontSize: 16,
+                                        height: deviceHeight(context)*0.056,
+                                        padding: EdgeInsets.only(left: 10,top: 10,right: 10),
+                                        child: customThemeText("+91", 14,textAlign: TextAlign.center,fontWeight: FontWeight.w700),
+                                      ),
+                                      HorizontalSpace(),
+                                      Expanded(
+                                        child: TextFormField(
+                                          controller: _mobileController,
+                                          style: TextStyle(color: AppColors.black),
+                                          decoration: InputDecoration(
+                                            contentPadding: EdgeInsets.symmetric(horizontal: 10,vertical: 6),
+                                            hintText: "Enter your mobile number",
+                                            hintStyle: TextStyle(color: AppColors.grey9,fontSize: 16),
+                                            filled: true,
+                                            fillColor: Colors.transparent,
+                                            enabledBorder: OutlineInputBorder(
+                                              borderRadius: BorderRadius.circular(8),
+                                              borderSide: BorderSide(color: AppColors.black2),
+                                            ),
+                                            focusedBorder: OutlineInputBorder(
+                                              borderRadius: BorderRadius.circular(8),
+                                              borderSide: BorderSide(color: AppColors.primary, width: 1),
+                                            ),
                                           ),
+                                          keyboardType: TextInputType.phone,
                                         ),
-                                      ],
-                                    ),
-                                  ),
-                                  SizedBox(height: 36),
-                                  Text(
-                                    "Mobile Number",
-                                    style: TextStyle(
-                                      color: AppColors.black,
-                                      fontWeight: FontWeight.w700,
-                                      fontSize: 16,
-                                    ),
-                                  ),
-                                  SizedBox(height: 10),
-                                  TextFormField(
-                                    controller: _mobileController,
-                                    style: TextStyle(color: AppColors.black),
-                                    decoration: InputDecoration(
-                                      prefixIcon: Icon(Icons.phone, color: AppColors.black),
-                                      hintText: "Enter your mobile number",
-                                      hintStyle: TextStyle(color: AppColors.black),
-                                      filled: true,
-                                      fillColor: Colors.transparent,
-                                      enabledBorder: OutlineInputBorder(
-                                        borderRadius: BorderRadius.circular(8),
-                                        borderSide: BorderSide(color: AppColors.black),
                                       ),
-                                      focusedBorder: OutlineInputBorder(
-                                        borderRadius: BorderRadius.circular(8),
-                                        borderSide: BorderSide(color: AppColors.black, width: 2),
-                                      ),
-                                    ),
-                                    keyboardType: TextInputType.phone,
+                                    ],
                                   ),
-                                  SizedBox(height: 24),
-                                  Text(
-                                    "Password",
-                                    style: TextStyle(
-                                      color: AppColors.black,
-                                      fontWeight: FontWeight.w700,
-                                      fontSize: 16,
-                                    ),
-                                  ),
-                                  SizedBox(height: 10),
+                                  VerticalSpace(height: 20,),
                                   TextField(
                                     obscureText: true,
                                     controller: _passwordController,
                                     style: TextStyle(color: AppColors.black),
+
                                     decoration: InputDecoration(
+                                      contentPadding: EdgeInsets.symmetric(horizontal: 30,vertical: 6),
                                       hintText: "Enter your password",
-                                      hintStyle: TextStyle(color: AppColors.black),
-                                      suffixIcon: Icon(Icons.visibility, color: AppColors.black),
+                                      hintStyle: TextStyle(color: AppColors.grey9,fontSize: 16),
+                                      suffixIcon: Icon(Icons.visibility, color: AppColors.primary),
                                       filled: true,
                                       fillColor: Colors.transparent,
                                       enabledBorder: OutlineInputBorder(
                                         borderRadius: BorderRadius.circular(8),
-                                        borderSide: BorderSide(color: AppColors.black),
+                                        borderSide: BorderSide(color: AppColors.black2,width: 0.5),
                                       ),
                                       focusedBorder: OutlineInputBorder(
                                         borderRadius: BorderRadius.circular(8),
-                                        borderSide: BorderSide(color: AppColors.black, width: 2),
+                                        borderSide: BorderSide(color: AppColors.primary, width: 0.5),
                                       ),
                                     ),
                                   ),
-                                  SizedBox(height: 32),
-                                  SizedBox(
-                                    width: double.infinity,
-                                    height: 50,
-                                    child: ElevatedButton(
-                                      onPressed: () {
-                                        _callSignApi();
-                                      },
-                                      style: ElevatedButton.styleFrom(
-                                        backgroundColor: AppColors.black,
-                                        shape: RoundedRectangleBorder(
-                                          borderRadius: BorderRadius.circular(12),
-                                        ),
-                                      ),
-                                      child: Text(
-                                        "Sign In",
-                                        style: TextStyle(
-                                          fontWeight: FontWeight.bold,
-                                          fontSize: 18,
-                                          color: Colors.white,
-                                        ),
-                                      ),
+                                  VerticalSpace(height: 10),
+                                  Align(
+                                    alignment: Alignment.centerRight,
+                                    child: customThemeText(
+                                      "Forgot Password?",16,
+                                      color: AppColors.primary,
+                                      fontWeight: FontWeight.w600,
+                                      textAlign: TextAlign.right
+
                                     ),
                                   ),
-                                  SizedBox(height: 24),
-                                  Center(
-                                    child: TextButton(
-                                      onPressed: () {
-                                        // Handle forgot password
-                                      },
-                                      child: Text(
-                                        "Forgot Password?",
-                                        style: TextStyle(
-                                          color: AppColors.black,
-                                          fontSize: 16,
-                                          fontWeight: FontWeight.w500,
-                                        ),
-                                      ),
-                                    ),
-                                  ),
-                                  SizedBox(height: 12),
-                                  Center(
-                                    child: RichText(
-                                      text: TextSpan(
-                                        style: TextStyle(
-                                          color: AppColors.black,
-                                          fontSize: 15,
-                                        ),
-                                        children: [
-                                          TextSpan(text: "Don't have an account? "),
-                                          TextSpan(
-                                            text: "Sign up as buyer",
-                                            style: TextStyle(
-                                              color: AppColors.black,
-                                              fontWeight: FontWeight.w600,
-                                            ),
-                                            // Add recognizer if needed for tap
-                                          ),
-                                        ],
-                                      ),
-                                    ),
-                                  ),
+
+
 
                                 ],
                               ),
@@ -290,6 +270,27 @@ class _LoginScreenState extends State<LoginScreen> {
                     ),
                   ),
                   //BOTTOM WIDGETS
+                  Container(
+                    margin: EdgeInsets.symmetric(horizontal: 16,vertical: 10),
+                    width: double.infinity,
+                    height: 50,
+                    child: ElevatedButton(
+                      onPressed: () {
+                        _callSignApi();
+                      },
+                      style: ElevatedButton.styleFrom(
+                        backgroundColor: AppColors.primary,
+                        shape: RoundedRectangleBorder(
+                          borderRadius: BorderRadius.circular(12),
+                        ),
+                      ),
+                      child: customThemeText(
+                        "Sign In",16,
+                        fontWeight: FontWeight.bold,
+                        color: Colors.white,
+                      ),
+                    ),
+                  ),
 
                 ],
               ),
@@ -302,6 +303,103 @@ class _LoginScreenState extends State<LoginScreen> {
 
 
   //UI WIDGETS   -> We have to use custom components whatever we have in project.
+  Widget _buildRoleToggle() {
+    return LayoutBuilder(
+      builder: (context, constraints) {
+        const double h = 44.0;
+        const double pad = 3.0;
+        final double w = constraints.maxWidth;
+        final double segmentW = (w - pad * 2) / 2.4; // exact half
+
+        return Semantics(
+          button: true,
+          label: 'Role toggle',
+          value: _role == Role.buyer ? 'Buyer' : 'Seller',
+          hint: 'Tap to switch',
+          child: Container(
+            padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 10),
+
+            // decoration: BoxDecoration(
+            //   color: AppColors.primary,
+            //   borderRadius: BorderRadius.circular(16),
+            //   border: Border.all(width: 0.5, color: AppColors.black),
+            // ),
+
+            child: InkWell(
+              borderRadius: BorderRadius.circular(16),
+              onTap: _toggleRole,
+              onDoubleTap: _toggleRole,
+              onLongPress: _toggleRole,
+              child: Container(
+                margin: const EdgeInsets.symmetric(horizontal: 16, vertical: 10),
+                padding: const EdgeInsets.symmetric(horizontal: 2, vertical: 00),
+                height: h,
+                decoration: BoxDecoration(
+                  color: AppColors.primary.withValues(alpha: 0.8),
+                  borderRadius: BorderRadius.circular(16),
+                  border: Border.all(width: 0.5, color: AppColors.black),
+                ),
+                child: Stack(
+                  children: [
+                    AnimatedAlign(
+                      duration: const Duration(milliseconds: 220),
+                      curve: Curves.easeOut,
+                      alignment: _role == Role.buyer
+                          ? Alignment.centerLeft
+                          : Alignment.centerRight,
+                      child: Container(
+                        height: h - pad * 3,
+                        width: segmentW,
+                        decoration: BoxDecoration(
+                          color: AppColors.white,
+                          borderRadius: BorderRadius.circular(12),
+                        ),
+                      ),
+                    ),
+
+                    // Labels
+                    Row(
+                      children: [
+                        Expanded(
+                          child: Center(
+                            child: customThemeText(
+                              "Buyer",
+                              16,
+                              color: _role == Role.buyer
+                                  ? AppColors.primary
+                                  : AppColors.white,
+                              fontWeight: FontWeight.w600,
+                              textAlign: TextAlign.center,
+                            ),
+                          ),
+                        ),
+                        Expanded(
+                          child: Center(
+                            child: customThemeText(
+                              "Seller",
+                              16,
+                              color: _role == Role.seller
+                                  ? AppColors.primary
+                                  : AppColors.white,
+                              fontWeight: FontWeight.w600,
+                              textAlign: TextAlign.center,
+                            ),
+                          ),
+                        ),
+                      ],
+                    ),
+                  ],
+                ),
+              ),
+            ),
+          ),
+        );
+      },
+    );
+  }
+
+
+
 
 
 
@@ -331,8 +429,6 @@ class _LoginScreenState extends State<LoginScreen> {
             textAlign: TextAlign.center,fontWeight: FontWeight.w600,color: Colors.white
         ),
         backgroundColor: AppColors.primary,
-        // behavior: SnackBarBehavior.floating,
-        // elevation: 1.0,
         shape: RoundedRectangleBorder(
           borderRadius: BorderRadius.circular(0.0),
         ),
@@ -345,6 +441,11 @@ class _LoginScreenState extends State<LoginScreen> {
     // WRITE YOUR REFRESH LOGIC
   }
 
+  void _toggleRole() {
+    setState(() {
+      _role = _role == Role.buyer ? Role.seller : Role.buyer;
+    });
+  }
 
 
   void _callSignApi() {
@@ -352,9 +453,7 @@ class _LoginScreenState extends State<LoginScreen> {
     final password = _passwordController.text.trim();
 
     if (mobile.isEmpty || password.isEmpty) {
-      ScaffoldMessenger.of(context).showSnackBar(
-        const SnackBar(content: Text(AppStrings.pleaseEnterEmailPassword)),
-      );
+      _showSnackBar("PLease enter the details");
       return;
     }
     logInRequest.mobile = mobile;
@@ -364,22 +463,11 @@ class _LoginScreenState extends State<LoginScreen> {
   }
 
   void _navigateToHome() {
-    if (user.role?.toLowerCase() == 'user') {
-      Navigator.pushAndRemoveUntil(
-        context,
-        MaterialPageRoute(builder: (context) => const MainHomeScreen()),
-            (route) => false,
-      );
-    }
+      Navigator.pushReplacement(context, MaterialPageRoute(builder: (context) => const MainHomeScreen()));
   }
   void _navigateToVendorHome() {
-    if (vendor.role?.toLowerCase() == 'vendor')  {
-      Navigator.pushAndRemoveUntil(
-        context,
-        MaterialPageRoute(builder: (context) => const VendorMainHomeScreen()),
-            (route) => false,
-      );
-    }
+      Navigator.pushReplacement(context, MaterialPageRoute(builder: (context) => const VendorMainHomeScreen()));
+
   }
 
   //API CALLS

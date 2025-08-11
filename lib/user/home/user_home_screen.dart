@@ -20,7 +20,8 @@ import '../product_card.dart';
 
 
 class UserHomeScreen extends StatefulWidget {
-  const UserHomeScreen({super.key});
+  Function(int)? onBackClick;
+  UserHomeScreen({super.key,this.onBackClick});
 
   @override
   State<UserHomeScreen> createState() => _UserHomeScreenState();
@@ -44,7 +45,7 @@ class _UserHomeScreenState extends State<UserHomeScreen> {
   @override
   void initState() {
     initPlatformState();
-    callCategoriesApi();
+    // callCategoriesApi();
     callProductsApi();
     super.initState();
   }
@@ -261,7 +262,7 @@ class _UserHomeScreenState extends State<UserHomeScreen> {
                         icon: const Icon(Icons.notifications_none),
                         tooltip: "Notifications",
                         onPressed: () {
-                          Navigator.push(context, MaterialPageRoute(builder: (_) => const UserNotificationScreen()));
+                          Navigator.push(context, MaterialPageRoute(builder: (_) =>  UserNotificationScreen()));
                         },
                       ),
                     ],

@@ -16,12 +16,13 @@ class AppDataHelper {
   static String? profileImage;
   static bool? isAdmin;
   static String? appVersion;
-  static int? slugId;
+  static String? role;
 
 
   static init() async {
     userId = await SharedPreferenceHelper.getString(Preferences.user_id);
     isLoggedIn = await SharedPreferenceHelper.getBool(Preferences.isLoggedIn);
+    role = await SharedPreferenceHelper.getString(Preferences.role);
     accessToken = await SharedPreferenceHelper.getString(Preferences.accessToken);
     refreshToken = await SharedPreferenceHelper.getString(Preferences.refreshToken);
     email =await SharedPreferenceHelper.getString(Preferences.email);
@@ -44,6 +45,7 @@ class AppDataHelper {
     isAdmin = null;
     appVersion = null;
     isLoggedIn = null;
+    role = null;
 
   }
 

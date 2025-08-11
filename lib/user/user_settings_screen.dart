@@ -56,7 +56,7 @@ class UserSettingsScreen extends StatelessWidget {
                 const SnackBar(content: Text("Logged out")),
               );
             },
-            style: ElevatedButton.styleFrom(backgroundColor: AppColors.danger, foregroundColor: Colors.white,),
+            style: ElevatedButton.styleFrom(backgroundColor: AppColors.primary, foregroundColor: Colors.white,),
             child: const Text("Logout"),
           ),
         ],
@@ -66,7 +66,7 @@ class UserSettingsScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final isDarkMode = context.watch<ThemeBloc>().state.isDarkMode;
+    // final isDarkMode = context.watch<ThemeBloc>().state.isDarkMode;
     final theme = Theme.of(context);
     final colorScheme = theme.colorScheme;
 
@@ -92,14 +92,14 @@ class UserSettingsScreen extends StatelessWidget {
               secondary: Icon(Icons.notifications, color: AppColors.primary),
             ),
 
-            SwitchListTile(
-              title: Text("Dark Mode", style: TextUtils.bodyLarge),
-              value: isDarkMode,
-              onChanged: (value) {
-                context.read<ThemeBloc>().add(ToggleThemeEvent(value));
-              },
-              secondary: Icon(Icons.dark_mode, color: AppColors.primary),
-            ),
+            // SwitchListTile(
+            //   title: Text("Dark Mode", style: TextUtils.bodyLarge),
+            //   // value: isDarkMode,
+            //   onChanged: (value) {
+            //     context.read<ThemeBloc>().add(ToggleThemeEvent(value));
+            //   },
+            //   secondary: Icon(Icons.dark_mode, color: AppColors.primary),
+            // ),
 
             ListTile(
               leading: Icon(Icons.language, color: AppColors.primary),

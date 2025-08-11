@@ -12,197 +12,10 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:fluttertoast/fluttertoast.dart';
 
 
-class VendorProfileDetailsScreen extends StatelessWidget {
-  final Map<String, dynamic> vendorProfile;
-
-  const VendorProfileDetailsScreen({super.key, required this.vendorProfile});
-
-  @override
-  Widget build(BuildContext context) {
-    final theme = Theme.of(context);
-    final colorScheme = theme.colorScheme;
-
-    return Scaffold(
-      backgroundColor: colorScheme.background,
-      body: SingleChildScrollView(
-        padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 12),
-        child: Column(
-          crossAxisAlignment: CrossAxisAlignment.center,
-          children: [
-            Stack(
-              children: [
-                Container(
-                  width: double.infinity,
-                  padding: const EdgeInsets.all(20),
-                  decoration: BoxDecoration(
-                    color: colorScheme.primary.withOpacity(0.05),
-                    borderRadius: BorderRadius.circular(20),
-                  ),
-                  child: Column(
-                    children: [
-                      CircleAvatar(
-                        radius: 40,
-                        backgroundImage: NetworkImage(
-                          vendorProfile["avatar"] ??
-                              'https://i.pravatar.cc/150?img=10',
-                        ),
-                      ),
-                      const SizedBox(height: 12),
-                      Text(
-                        vendorProfile["name"] ?? "Vendor Name",
-                        style: theme.textTheme.titleLarge?.copyWith(
-                          fontWeight: FontWeight.bold,
-                          color: colorScheme.onBackground,
-                        ),
-                      ),
-                      const SizedBox(height: 4),
-                      Text(
-                        vendorProfile["shop"] ?? "Shop Name",
-                        style: theme.textTheme.bodyMedium?.copyWith(
-                          color: colorScheme.onBackground.withOpacity(0.7),
-                        ),
-                      ),
-                      const SizedBox(height: 4),
-                      Row(
-                        mainAxisAlignment: MainAxisAlignment.center,
-                        children: [
-                          Icon(Icons.location_on, size: 16, color: colorScheme.onBackground.withOpacity(0.6)),
-                          const SizedBox(width: 4),
-                          Text(
-                            vendorProfile["location"] ?? "Location",
-                            style: theme.textTheme.bodySmall?.copyWith(
-                              color: colorScheme.onBackground.withOpacity(0.6),
-                            ),
-                          ),
-                        ],
-                      ),
-                    ],
-                  ),
-                ),
-
-                Positioned(
-                  top: 12,
-                  right: 12,
-                  child: Material(
-                    color: colorScheme.surface,
-                    shape: const CircleBorder(),
-                    elevation: 2,
-                    child: IconButton(
-                      icon: Icon(Icons.edit, size: 20, color: colorScheme.primary),
-                      onPressed: () {
-                        Navigator.push(
-                          context,
-                          MaterialPageRoute(
-                            builder: (_) => EditVendorProfileScreen(vendorProfile: vendorProfile),
-                          ),
-                        );
-                      },
-                    ),
-                  ),
-                ),
-              ],
-            ),
-
-            const SizedBox(height: 20),
-
-            Card(
-              elevation: 1,
-              shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(16)),
-              color: colorScheme.surface,
-              child: ListTile(
-                leading: Icon(Icons.phone, color: colorScheme.primary),
-                title: Text("Contact", style: TextStyle(color: colorScheme.onSurface)),
-                subtitle: Text(
-                  vendorProfile["contact"] ?? "N/A",
-                  style: TextStyle(color: colorScheme.onSurface.withOpacity(0.8)),
-                ),
-              ),
-            ),
-
-            const SizedBox(height: 20),
-
-
-            Column(
-              children: [
-                _buildSectionTile(context, Icons.calendar_today, "Bookings", () {
-                  Navigator.push(
-                    context,
-                    MaterialPageRoute(builder: (_) => VendorBookingsScreen()),
-                  );
-                }),
-                _buildSectionTile(context, Icons.rate_review, "Reviews", () {
-                  Navigator.push(
-                    context,
-                    MaterialPageRoute(builder: (_) => VendorReviewsScreen()),
-                  );
-                }),
-                _buildSectionTile(context, Icons.settings, "Settings", () {
-                  Navigator.push(
-                    context,
-                    MaterialPageRoute(builder: (_) => VendorSettingsScreen()),
-                  );
-                }),
-              ],
-            ),
-
-            const SizedBox(height: 30),
-
-            TextButton.icon(
-              icon: Icon(Icons.logout, color: colorScheme.error),
-              label: Text("Logout", style: TextStyle(color: colorScheme.error)),
-              onPressed: () {
-                showDialog(
-                  context: context,
-                  builder: (_) => AlertDialog(
-                    title: const Text("Confirm Logout"),
-                    content: const Text("Are you sure you want to logout?"),
-                    actions: [
-                      TextButton(
-                        onPressed: () => Navigator.pop(context),
-                        child: const Text("Cancel"),
-                      ),
-                      TextButton(
-                        onPressed: () {
-                          Navigator.pop(context);
-                          // Add logout functionality here
-                        },
-                        child: Text("Logout", style: TextStyle(color: colorScheme.error)),
-                      ),
-                    ],
-                  ),
-                );
-              },
-            ),
-          ],
-        ),
-      ),
-    );
-  }
-
-  Widget _buildSectionTile(BuildContext context, IconData icon, String title, VoidCallback onTap) {
-    final theme = Theme.of(context);
-    final colorScheme = theme.colorScheme;
-
-    return Card(
-      margin: const EdgeInsets.symmetric(vertical: 6),
-      elevation: 0.8,
-      color: colorScheme.surface,
-      shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(14)),
-      child: ListTile(
-        leading: Icon(icon, color: colorScheme.primary),
-        title: Text(title, style: TextStyle(color: colorScheme.onSurface)),
-        trailing: Icon(Icons.arrow_forward_ios, size: 16, color: colorScheme.onSurface.withOpacity(0.6)),
-        onTap: onTap,
-      ),
-    );
-  }
-}
-
-
-
 
 class VendorProfileScreen extends StatefulWidget {
-  const VendorProfileScreen({super.key});
+  Function(int)? onBackClick;
+   VendorProfileScreen({super.key,this.onBackClick});
 
   @override
   State<VendorProfileScreen> createState() => _VendorProfileScreenState();
@@ -292,17 +105,19 @@ class _VendorProfileScreenState extends State<VendorProfileScreen> {
                                 children:  [
                                   //BODY WIDGETS
                                   customThemeText("Profile", 20,fontWeight: FontWeight.w700,color: AppColors.black),
+                                  VerticalSpace(),
                                   Container(
                                     child: Row(
                                       children: [
                                         CircleAvatar(
-                                          radius: 40,
-                                          backgroundImage: AssetImage("assets/images/profile_defalut.jpg"),
+                                          radius: 36,
+                                          backgroundImage: AssetImage("assets/images/profile.png",),
                                         ),
+                                        HorizontalSpace(),
                                         Column(
                                           children: [
                                             customThemeText("Santhosh", 18,fontWeight: FontWeight.w700,color: AppColors.black),
-                                            customThemeText("Electronics", 16,fontWeight: FontWeight.w600,color: AppColors.black3),
+                                            customThemeText("Electronics", 14,fontWeight: FontWeight.w600,color: AppColors.black3),
                                           ],
                                         ),
 
@@ -355,7 +170,10 @@ class _VendorProfileScreenState extends State<VendorProfileScreen> {
   Widget listWidget(String image,String title,{String? action}){
     return InkWell(
       onTap: (){
-        if(title=="Appointments"){
+         if(title=="My Listings"){
+           widget.onBackClick!(1);
+
+        } else if(title=="Appointments"){
           Navigator.push(
             context,
             MaterialPageRoute(builder: (_) => const VendorBookingsScreen()),
@@ -368,12 +186,18 @@ class _VendorProfileScreenState extends State<VendorProfileScreen> {
         }
       },
       child: Container(
-        padding: EdgeInsets.symmetric(vertical: 10),
+        padding: EdgeInsets.symmetric(vertical: 8),
         child: Row(
+          mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
-            Image.asset(image,color: AppColors.black,height: 20,width: 20,),
-            HorizontalSpace(),
-            customThemeText(title, 16,fontWeight: FontWeight.w500,color: AppColors.black),
+            Row(
+              children: [
+                Image.asset(image,color: AppColors.black,height: 18,width: 18,),
+                HorizontalSpace(),
+                customThemeText(title, 15,fontWeight: FontWeight.w400,color: AppColors.black),
+              ],
+            ),
+            Icon(Icons.arrow_forward_ios_rounded,color: AppColors.black1,size: 18,)
           ],
         ),
       )

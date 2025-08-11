@@ -11,7 +11,8 @@ import 'package:fluttertoast/fluttertoast.dart';
 
 
 class VendorProductListScreen extends StatefulWidget {
-  const VendorProductListScreen({super.key});
+  Function(int)? onBackClick;
+   VendorProductListScreen({super.key,this.onBackClick});
 
   @override
   State<VendorProductListScreen> createState() => _VendorProductListScreenState();

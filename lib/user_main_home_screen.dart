@@ -4,6 +4,7 @@ import 'package:eimi_buy_or_sell_app/user/user_profile_screen.dart';
 import 'package:eimi_buy_or_sell_app/utils/app_colors.dart';
 import 'package:flutter/material.dart';
 
+
 class MainHomeScreen extends StatefulWidget {
   const MainHomeScreen({super.key});
 
@@ -13,17 +14,29 @@ class MainHomeScreen extends StatefulWidget {
 
 class _MainHomeScreenState extends State<MainHomeScreen> {
   int _currentIndex = 0;
+  late List<Widget> _children;
+  @override
+  void initState() {
 
-  final _screens = [
-    const UserHomeScreen(),
-    const UserBookingsScreen(),
-    const UserProfileScreen(),
-  ];
+    _children = [
+      UserHomeScreen(onBackClick:onTabTapped),
+      UserBookingsScreen(onBackClick:onTabTapped),
+      UserProfileScreen(onBackClick:onTabTapped),
+    ];
+    super.initState();
+  }
+
+
+  void onTabTapped(int index) {
+    setState(() {
+      _currentIndex = index;
+    });
+  }
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: _screens[_currentIndex],
+      body: _children[_currentIndex],
       bottomNavigationBar: BottomNavigationBar(
         currentIndex: _currentIndex,
         backgroundColor: AppColors.white,

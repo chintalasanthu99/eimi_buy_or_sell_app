@@ -102,6 +102,7 @@ class AuthBloc extends Bloc<BaseEvent, BaseState> {
     await SharedPreferenceHelper.saveString(Preferences.gender, response.gender != null ? response.gender! : "");
     // await SharedPreferenceHelper.saveInt(Preferences.app_user_id, response.id != null ? response.id! : 0);
     // await SharedPreferenceHelper.saveBool(Preferences.isKycVerified, response.isKycVerified!);
+    await SharedPreferenceHelper.saveString(Preferences.role, response.role??"");
     await SharedPreferenceHelper.saveBool(Preferences.isLoggedIn, true);
     AppDataHelper.init();
     // AppDataHelper.mobile = response.phoneNumber??"";
@@ -125,7 +126,7 @@ class AuthBloc extends Bloc<BaseEvent, BaseState> {
     // await SharedPreferenceHelper.saveString(Preferences.mobile,  response.contactDetails!=null && response.contactDetails?.mobile != null ? response.contactDetails?.mobile : "");
     await SharedPreferenceHelper.saveString(Preferences.gender, response.gender != null ? response.gender! : "");
     // await SharedPreferenceHelper.saveInt(Preferences.app_user_id, response.id != null ? response.id! : 0);
-    // await SharedPreferenceHelper.saveBool(Preferences.isKycVerified, response.isKycVerified!);
+    await SharedPreferenceHelper.saveString(Preferences.role, response.role??"");
     await SharedPreferenceHelper.saveBool(Preferences.isLoggedIn, true);
     AppDataHelper.init();
     // AppDataHelper.mobile = response.phoneNumber??"";

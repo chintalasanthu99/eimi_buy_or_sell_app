@@ -25,6 +25,7 @@ class Preferences {
   static const String refreshToken = "refreshToken";
   static const String gender = "gender";
   static const String isAppReviewGiven = "isAppReviewGiven";
+  static const String role = "role";
 
 
 
@@ -32,14 +33,9 @@ class Preferences {
 
   static const String isLoggedIn = "isLoggedIn";
   static const String isAdmin = "isAdmin";
-  static const String isShowContest = "isShowContest";
-  static const String isAppIntro = "isAppIntro";
   static const String iOS_PERMISSION = "iOS_PERMISSION";
   static const String userResponse = "user_response";
   static const String userLocation = "user_location";
-  static const String sharkTankData = "shark_tank_data";
-  static const String appBarData = "app_bar_data";
-  static const String giftCardData = "gift_card_data";
   static const String eventData = "event_data";
   static const String forceUpdateData = "Force_update_data";
 

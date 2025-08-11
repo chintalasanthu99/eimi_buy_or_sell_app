@@ -12,7 +12,8 @@ import 'package:fluttertoast/fluttertoast.dart';
 
 
 class VendorHomePage extends StatefulWidget {
-  const VendorHomePage({super.key});
+  Function(int)? onBackClick;
+  VendorHomePage({super.key,this.onBackClick});
 
   @override
   State<VendorHomePage> createState() => _VendorHomePageState();

@@ -1,178 +1,292 @@
-import 'package:eimi_buy_or_sell_app/user/product_details_screen.dart';
 import 'package:eimi_buy_or_sell_app/utils/app_colors.dart';
+import 'package:eimi_buy_or_sell_app/utils/base_bloc/base_bloc.dart';
+import 'package:eimi_buy_or_sell_app/utils/base_bloc/base_state.dart';
+import 'package:eimi_buy_or_sell_app/utils/core/core.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:fluttertoast/fluttertoast.dart';
 
-final List<Map<String, dynamic>> allProducts = List.generate(15, (index) {
-  return {
-    "title": "Product ${index + 1}",
-    "category": index % 2 == 0 ? "Plots" : "Electronics",
-    "subcategory": "Subcat ${index + 1}",
-    "price": 50000 + index * 1000,
-    "likes": 10 + index,
-    "wishCount": 5 + index,
-    "rating": 4 + (index % 2),
-    "status": index % 3 == 0 ? "sold" : "available",
-    "imageUrl": index % 4 == 0 ? null : "https://picsum.photos/200?random=$index",
-    "location": index % 2 == 0 ? "Hyderabad" : "Bangalore"
-  };
-});
+class UserBookingsScreen extends StatefulWidget {
+  Function(int)? onBackClick;
+   UserBookingsScreen({super.key,this.onBackClick});
 
-final List<Map<String, dynamic>> bookings = List.generate(10, (index) {
-  return {
-    "date": "July ${10 + index}, 2025",
-    "time": "${10 + index % 4}:00 ${index % 2 == 0 ? 'AM' : 'PM'}",
-    "status": index % 3 == 0
-        ? "Confirmed"
-        : index % 3 == 1
-        ? "Pending"
-        : "Cancelled",
-    "product": allProducts[index],
-  };
-});
+  @override
+  State<UserBookingsScreen> createState() => _UserBookingsScreenState();
+}
 
-class UserBookingsScreen extends StatelessWidget {
-  const UserBookingsScreen({super.key});
+class _UserBookingsScreenState extends State<UserBookingsScreen> {
+  final BaseBloc _bloc = BaseBloc();
+  final ScrollController _scrollController = ScrollController();
+  _UserBookingsScreenState();
 
-  Color _getStatusColor(String status, ColorScheme colorScheme) {
-    switch (status) {
-      case "Confirmed":
-        return AppColors.success;
-      case "Pending":
-        return AppColors.warning;
-      case "Cancelled":
-        return Colors.red; // you could also derive a tone from colorScheme.error
-      default:
-        return colorScheme.outline;
-    }
-  }
-  Color _getStatusBackgroundColor(String status, ColorScheme colorScheme) {
-    switch (status) {
-      case "Confirmed":
-        return colorScheme.primary.withOpacity(0.1);
-      case "Pending":
-        return colorScheme.tertiary.withOpacity(0.1);
-      case "Cancelled":
-        return Colors.red.withOpacity(0.1);
-      default:
-        return colorScheme.surfaceContainerHighest.withOpacity(0.1);
-    }
+  @override
+  void initState() {
+    initPlatformState();
+    super.initState();
   }
 
+  @override
+  void dispose() {
+    _bloc.close();
+    super.dispose();
+  }
 
   @override
   Widget build(BuildContext context) {
-    final theme = Theme.of(context);
-    final colorScheme = theme.colorScheme;
-    final textTheme = theme.textTheme;
-
     return Scaffold(
-      appBar: AppBar(
-        title: const Text("My Bookings"),
-        backgroundColor: colorScheme.background,
-        foregroundColor: colorScheme.onBackground,
-        elevation: 0.5,
-      ),
-      body: bookings.isEmpty
-          ? Center(
-        child: Text(
-          "No bookings yet.",
-          style: textTheme.bodyLarge,
-        ),
-      )
-          : ListView.separated(
-        padding: const EdgeInsets.all(12),
-        itemCount: bookings.length,
-        separatorBuilder: (_, __) => const SizedBox(height: 10),
-        itemBuilder: (context, index) {
-          final booking = bookings[index];
-          final product = booking["product"];
-          final statusColor = _getStatusColor(booking["status"], colorScheme);
-
-          return InkWell(
-            onTap: () {
-              Navigator.push(
-                context,
-                MaterialPageRoute(
-                  builder: (_) => ProductDetailScreen(product: product),
-                ),
-              );
-            },
-            child: Card(
-              elevation: 2,
-              color: colorScheme.surface,
-              shape: RoundedRectangleBorder(
-                borderRadius: BorderRadius.circular(12),
-              ),
-              child: Padding(
-                padding: const EdgeInsets.all(14),
-                child: Row(
-                  children: [
-                    ClipRRect(
-                      borderRadius: BorderRadius.circular(8),
-                      child: product["imageUrl"] != null
-                          ? Image.network(
-                        product["imageUrl"],
-                        height: 70,
-                        width: 70,
-                        fit: BoxFit.cover,
-                      )
-                          : Image.asset(
-                        'assets/images/service_category.jpg',
-                        height: 70,
-                        width: 70,
-                        fit: BoxFit.cover,
-                      ),
-                    ),
-                    const SizedBox(width: 12),
-                    Expanded(
-                      child: Column(
-                        crossAxisAlignment: CrossAxisAlignment.start,
-                        children: [
-                          Text(
-                            product["title"],
-                            style: textTheme.titleMedium?.copyWith(
-                              fontWeight: FontWeight.w600,
-                            ),
-                          ),
-                          const SizedBox(height: 4),
-                          Text(
-                            product["location"],
-                            style: textTheme.bodySmall?.copyWith(
-                              color: colorScheme.onSurfaceVariant,
-                            ),
-                          ),
-                          const SizedBox(height: 4),
-                          Text(
-                            "${booking["date"]} at ${booking["time"]}",
-                            style: textTheme.bodySmall,
-                          ),
-                        ],
-                      ),
-                    ),
-              Container(
-                padding: const EdgeInsets.symmetric(
-                  horizontal: 10,
-                  vertical: 5,
-                ),
-                decoration: BoxDecoration(
-                  color: colorScheme.tertiary.withAlpha(10),
-                  borderRadius: BorderRadius.circular(8),
-                ),
-                child: Text(
-                  booking["status"],
-                  style: textTheme.labelMedium?.copyWith(
-                    color: statusColor,
-                    fontWeight: FontWeight.bold,
-                  ),
-                ),
-              ),
-                  ],
-                ),
-              ),
-            ),
-          );
-        },
+      resizeToAvoidBottomInset: true,
+      body: BlocProvider(
+        create: (_) => _bloc,
+        child: buildPage(),
       ),
     );
   }
+
+
+  Widget buildPage() {
+    return BlocListener<BaseBloc, BaseState>(listener: (context, state) async {
+      if (state is BaseError) {
+        ScaffoldMessenger.of(context).showSnackBar(
+          SnackBar(
+              duration: Duration(milliseconds: 2000),
+              content: customThemeText(state.errorMessage,14,fontWeight: FontWeight.w600,color: Colors.white),
+              backgroundColor: AppColors.primary),
+        );
+      } else if (state is DataLoaded) {
+        //ADD YOUR FUNCTIONALITY
+      }
+    }, child: BlocBuilder<BaseBloc, BaseState>(
+      bloc: _bloc,
+      builder: (context, state) {
+        return Center(
+          child: buildUI(state,context),
+        );
+      },
+    ));
+  }
+
+  Widget buildUI(state, context) {
+    return Container(
+      color: AppColors.white,
+      child: SafeArea(
+        top: true,
+        child: Stack(
+          children: <Widget>[
+            Container(
+              color: AppColors.white,
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.stretch,
+                children: <Widget>[
+                  //APP BAR
+
+                  //BODY
+                  Expanded(
+                    child: Container(
+                      color: AppColors.white,
+                      child: SingleChildScrollView(
+                        controller: _scrollController,
+                        physics: AlwaysScrollableScrollPhysics(),
+                        child: Container(
+                          margin:
+                          const EdgeInsets.symmetric(horizontal: 16, vertical: 10),
+                          child: Column(
+                            crossAxisAlignment: CrossAxisAlignment.stretch,
+                            children: <Widget>[
+                              VerticalSpace(height:10,),
+                              Column(
+                                crossAxisAlignment: CrossAxisAlignment.start,
+                                children:  [
+                                  //BODY WIDGETS
+                                  customThemeText("Bookings", 16,fontWeight: FontWeight.w700,color: AppColors.black),
+                                  VerticalSpace(height: 16,),
+                                  _buildUserBookingList(context),
+                                ],
+                              ),
+
+                            ],
+                          ),
+                        ),
+                      ),
+                    ),
+                  ),
+                  //BOTTOM WIDGETS
+
+                ],
+              ),
+            ),
+          ],
+        ),
+      ),
+    );
+  }
+
+
+  //UI WIDGETS   -> We have to use custom components whatever we have in project.
+  Widget _buildUserBookingList(BuildContext context) {
+    return ListView.builder(
+      itemCount: 3, // replace with your bookingList.length
+      shrinkWrap: true,
+      physics: NeverScrollableScrollPhysics(),
+      itemBuilder: (context, i) {
+        return Column(
+          children: [
+            Container(
+              padding: EdgeInsets.all(10),
+              decoration: BoxDecoration(
+                borderRadius: BorderRadius.circular(12),
+                border: Border.all(width: 1, color: AppColors.black2),
+              ),
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  // Time slot
+                  Row(
+                    children: [
+                      Icon(Icons.access_time, size: 20, color: AppColors.black),
+                      SizedBox(width: 6),
+                      customThemeText("9:30 AM to 10:00 AM", 16,
+                          fontWeight: FontWeight.w700, color: AppColors.black10),
+                    ],
+                  ),
+                  SizedBox(height: 8),
+                  // Address
+                  Row(
+                    children: [
+                      Icon(Icons.location_on, size: 16, color: AppColors.black1),
+                      SizedBox(width: 6),
+                      Expanded(
+                        child: customThemeText(
+                          "Madhapur, Hyderabad, Telangana - 560034.",
+                          13,
+                          fontWeight: FontWeight.w500,
+                          color: AppColors.black1,
+                        ),
+                      ),
+                    ],
+                  ),
+                  SizedBox(height: 8),
+                  // Property name
+                  Row(
+                    children: [
+                      Icon(Icons.home, size: 16, color: AppColors.black1),
+                      SizedBox(width: 6),
+                      Expanded(
+                        child: customThemeText(
+                          "3 BHK Flat in Madhapur",
+                          13,
+                          fontWeight: FontWeight.w500,
+                          color: AppColors.black1,
+                        ),
+                      ),
+                    ],
+                  ),
+                  SizedBox(height: 8),
+                  // Contact
+                  Row(
+                    children: [
+                      Icon(Icons.person, size: 16, color: AppColors.black1),
+                      SizedBox(width: 6),
+                      Expanded(
+                        child: customThemeText(
+                          "Mr. Santhosh Kumar, Ph.No: +91 1223456789",
+                          13,
+                          fontWeight: FontWeight.w500,
+                          color: AppColors.black1,
+                        ),
+                      ),
+                    ],
+                  ),
+                  SizedBox(height: 12),
+                  // Buttons
+                  Row(
+                    children: [
+                      Expanded(
+                        child: Container(
+                          padding:
+                          EdgeInsets.symmetric(horizontal: 6, vertical: 8),
+                          decoration: BoxDecoration(
+                            color: AppColors.green1,
+                            borderRadius: BorderRadius.circular(6),
+                          ),
+                          alignment: Alignment.center,
+                          child: customThemeText("Changed Slot", 14,
+                              fontWeight: FontWeight.w700,
+                              color: AppColors.vendorPrimary),
+                        ),
+                      ),
+                      SizedBox(width: 8),
+                      Expanded(
+                        child: Container(
+                          padding:
+                          EdgeInsets.symmetric(horizontal: 6, vertical: 8),
+                          decoration: BoxDecoration(
+                            color: AppColors.red2,
+                            borderRadius: BorderRadius.circular(6),
+                          ),
+                          alignment: Alignment.center,
+                          child: customThemeText("Cancel", 14,
+                              fontWeight: FontWeight.w700,
+                              color: AppColors.red3),
+                        ),
+                      ),
+                    ],
+                  ),
+                ],
+              ),
+            ),
+            SizedBox(height: 12),
+          ],
+        );
+      },
+    );
+  }
+
+
+
+
+  //FUNCTIONALITY
+  void _showToastBar(String message) {
+    Fluttertoast.showToast(
+        msg: message,
+        toastLength: Toast.LENGTH_LONG,
+        gravity: ToastGravity.CENTER,
+        timeInSecForIosWeb: 6,
+        backgroundColor : AppColors.primary,
+        textColor: Colors.white,
+        fontSize: 16.0
+    );
+  }
+
+  void _showSnackBar(String message) {
+    ScaffoldMessenger.of(context).showSnackBar(
+      SnackBar(
+        content: customThemeText(
+            message,
+            14,
+            textAlign: TextAlign.center,fontWeight: FontWeight.w600,color: Colors.white
+        ),
+        backgroundColor: AppColors.primary,
+        // behavior: SnackBarBehavior.floating,
+        // elevation: 1.0,
+        shape: RoundedRectangleBorder(
+          borderRadius: BorderRadius.circular(0.0),
+        ),
+      ),
+    );
+  }
+
+
+
+  Future<void> onRefresh()async {
+    bool data = false;
+    // WRITE YOUR REFRESH LOGIC
+  }
+
+  //API CALLS
+  Future<void> initPlatformState() async {
+    if (!mounted) return;
+  }
+
+
 }
+

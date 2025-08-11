@@ -30,6 +30,7 @@ class AppColors {
   static final Color grey6 = HexColor("#E0E7ED");
   static final Color grey7 = HexColor("#E2E2E2");
   static final Color grey8 = HexColor("#5A5A5A");
+  static final Color grey9 = HexColor("#909090");
 
   // Dark Theme
   static  Color darkPrimary = HexColor("#DE3163");
@@ -48,6 +49,7 @@ class AppColors {
   static  Color black4 = HexColor("#262626");
   static  Color green10 = HexColor("#D7F5EC");
   static  Color green1 = HexColor("#E7FAF8");
+  static  Color green2 = HexColor("#81D5C3");
   static  Color red1 = HexColor("#FDD0CC");
   static  Color red2 = HexColor("#FFE7EB");
   static  Color red3 = HexColor("#EA193C");

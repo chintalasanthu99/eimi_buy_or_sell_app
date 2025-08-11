@@ -20,13 +20,13 @@ class _VendorMainHomeScreenState extends State<VendorMainHomeScreen> {
   void initState() {
     super.initState();
     _screens = [
-      VendorHomePage(),
-      VendorProductListScreen(),
-      VendorProfileScreen(),
+      VendorHomePage(onBackClick: changeTab,),
+      VendorProductListScreen(onBackClick: changeTab,),
+      VendorProfileScreen(onBackClick: changeTab,),
     ];
   }
 
-  void _changeTab(int index) {
+  void changeTab(int index) {
     setState(() {
       _currentIndex = index;
     });
@@ -58,7 +58,7 @@ class _VendorMainHomeScreenState extends State<VendorMainHomeScreen> {
         ),
         child: NavigationBar(
           selectedIndex: _currentIndex,
-          onDestinationSelected: _changeTab,
+          onDestinationSelected: changeTab,
           destinations: const [
             NavigationDestination(icon: Icon(Icons.home_filled,size: 36,), label: 'Home',),
             NavigationDestination(icon: Icon(Icons.list_alt_outlined), label: 'Products'),

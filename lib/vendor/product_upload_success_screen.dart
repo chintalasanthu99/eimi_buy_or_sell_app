@@ -1,25 +1,27 @@
+
 import 'package:eimi_buy_or_sell_app/utils/app_colors.dart';
+import 'package:eimi_buy_or_sell_app/utils/base_bloc/base_bloc.dart';
 import 'package:eimi_buy_or_sell_app/utils/base_bloc/base_state.dart';
 import 'package:eimi_buy_or_sell_app/utils/core/core.dart';
-import 'package:eimi_buy_or_sell_app/vendor/vendor_home/vendor_home_bloc/vendor_home_bloc.dart';
+import 'package:eimi_buy_or_sell_app/vendor_main_home_screen.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
+
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:fluttertoast/fluttertoast.dart';
 
 
-
-class UserNotificationScreen extends StatefulWidget {
-
-   UserNotificationScreen({super.key,});
+class ProductUploadSuccessScreen extends StatefulWidget {
+  const ProductUploadSuccessScreen({super.key});
 
   @override
-  State<UserNotificationScreen> createState() => _UserNotificationScreenState();
+  State<ProductUploadSuccessScreen> createState() => _ProductUploadSuccessScreenState();
 }
 
-class _UserNotificationScreenState extends State<UserNotificationScreen> {
-  final VendorHomeBloc _bloc = VendorHomeBloc();
+class _ProductUploadSuccessScreenState extends State<ProductUploadSuccessScreen> {
+  final BaseBloc _bloc = BaseBloc();
   final ScrollController _scrollController = ScrollController();
-  _UserNotificationScreenState();
+  _ProductUploadSuccessScreenState();
 
   @override
   void initState() {
@@ -46,7 +48,7 @@ class _UserNotificationScreenState extends State<UserNotificationScreen> {
 
 
   Widget buildPage() {
-    return BlocListener<VendorHomeBloc, BaseState>(listener: (context, state) async {
+    return BlocListener<BaseBloc, BaseState>(listener: (context, state) async {
       if (state is BaseError) {
         ScaffoldMessenger.of(context).showSnackBar(
           SnackBar(
@@ -57,7 +59,7 @@ class _UserNotificationScreenState extends State<UserNotificationScreen> {
       } else if (state is DataLoaded) {
         //ADD YOUR FUNCTIONALITY
       }
-    }, child: BlocBuilder<VendorHomeBloc, BaseState>(
+    }, child: BlocBuilder<BaseBloc, BaseState>(
       bloc: _bloc,
       builder: (context, state) {
         return Center(
@@ -80,22 +82,7 @@ class _UserNotificationScreenState extends State<UserNotificationScreen> {
                 crossAxisAlignment: CrossAxisAlignment.stretch,
                 children: <Widget>[
                   //APP BAR
-                  Container(
-                    padding: EdgeInsets.symmetric(horizontal: 16, vertical: 10),
-                    child: InkWell(
-                      onTap: (){
-                        Navigator.pop(context);
-                      },
-                      child: Row(
-                        children: [
-                          Icon(Icons.arrow_back),
-                          HorizontalSpace(),
-                          customThemeText("Notifications", 18,fontWeight: FontWeight.w700,color: AppColors.black),
 
-                        ],
-                      ),
-                    ),
-                  ),
                   //BODY
                   Expanded(
                     child: Container(
@@ -109,15 +96,14 @@ class _UserNotificationScreenState extends State<UserNotificationScreen> {
                           child: Column(
                             crossAxisAlignment: CrossAxisAlignment.stretch,
                             children: <Widget>[
-                              VerticalSpace(height: 10,),
+                              VerticalSpace(height: deviceHeight(context)*0.10,),
                               Column(
-                                crossAxisAlignment: CrossAxisAlignment.start,
+                                mainAxisAlignment: MainAxisAlignment.center,
                                 children:  [
                                   //BODY WIDGETS
-                                  customThemeText("Today", 18,fontWeight: FontWeight.w700),
-                                  VerticalSpace(height: 16,),
-                                  _buildNotificationListWidget(),
-
+                                  Image.asset("assets/images/success_image.png",height: deviceHeight(context)*0.1,width: deviceWidth(context) *0.2,),
+                                  customThemeText("Listing Created", 16,fontWeight: FontWeight.w600),
+                                  customThemeText("Your listing has been created and sent for approval. You will receive regular updates about its status. To track your listing, go to My Listings tab.", 14,fontWeight: FontWeight.w400),
                                 ],
                               ),
 
@@ -128,6 +114,7 @@ class _UserNotificationScreenState extends State<UserNotificationScreen> {
                     ),
                   ),
                   //BOTTOM WIDGETS
+                  buttonWidget()
 
                 ],
               ),
@@ -140,53 +127,26 @@ class _UserNotificationScreenState extends State<UserNotificationScreen> {
 
 
   //UI WIDGETS   -> We have to use custom components whatever we have in project.
-
-  Widget _buildNotificationListWidget(){
+  Widget buttonWidget(){
     return Container(
-      height: deviceHeight(context),
-      child: ListView.builder(
-          itemCount: 4,
-          shrinkWrap: true,
-          scrollDirection: Axis.vertical,
-          physics: NeverScrollableScrollPhysics(),
-          itemBuilder: (BuildContext context,int i){
-            return Column(
-              mainAxisAlignment: MainAxisAlignment.start,
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: [
-
-                Row(
-                  mainAxisAlignment: MainAxisAlignment.start,
-                  children: [
-                    InkWell(
-                        child: CircleAvatar(
-                          radius: deviceWidth(context)*0.1,
-                          backgroundColor: AppColors.grey7.withValues(alpha: 0.80),
-                          child: Image.asset("assets/images/product_image.png",width: deviceWidth(context)*0.14,),)),
-                    HorizontalSpace(),
-                    Expanded(
-                      child: Container(
-                        child: Column(
-                          crossAxisAlignment: CrossAxisAlignment.start,
-                          children: [
-                            customThemeText("New Appointment Booked", 16,fontWeight: FontWeight.w700),
-                            customThemeText("John Doe just booked an appointment. Tap to view time and details.", 14,fontWeight: FontWeight.w500)
-
-                          ],
-                        ),
-                      ),
-                    ),
-                  ],
-                ),
-                VerticalSpace(),
-                Container(
-                    padding: EdgeInsets.symmetric(vertical: 10),
-                    child: horizontalLine(context,color: AppColors.grey6)),
-              ],
-            );
-          }),
-    );
+        margin: EdgeInsets.symmetric(horizontal: 16,vertical: 10),
+        padding: EdgeInsets.symmetric(horizontal: 16,vertical: 10),
+        width: double.infinity,
+        // height: 50,
+        decoration: BoxDecoration(
+            color: AppColors.primary,
+            borderRadius: BorderRadius.circular(16)),
+        child: customThemeText(
+            "Go To Home",16,
+            fontWeight: FontWeight.w600,
+            color: Colors.white,
+            textAlign: TextAlign.center
+        )
+    ).onTap((){
+      Navigator.pushReplacement(context,MaterialPageRoute(builder: (context) => VendorMainHomeScreen()));
+    });
   }
+
 
 
   //FUNCTIONALITY
@@ -234,4 +194,3 @@ class _UserNotificationScreenState extends State<UserNotificationScreen> {
 
 
 }
-
