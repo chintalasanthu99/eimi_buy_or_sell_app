@@ -204,7 +204,7 @@ class _OnBoardingScreenState extends State<OnBoardingScreen> {
     ).onTap((){
       Navigator.push(
         context,
-        MaterialPageRoute(builder: (_) => const LoginScreen()),
+        MaterialPageRoute(builder: (_) => const OnBoardingScreen1(type:"login")),
       );
     });
   }
@@ -228,7 +228,7 @@ class _OnBoardingScreenState extends State<OnBoardingScreen> {
     ).onTap((){
       Navigator.push(
         context,
-        MaterialPageRoute(builder: (_) => const OnBoardingScreen1()),
+        MaterialPageRoute(builder: (_) => const OnBoardingScreen1(type: "signup",)),
       );
     });
   }

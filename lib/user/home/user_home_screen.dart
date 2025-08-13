@@ -45,7 +45,7 @@ class _UserHomeScreenState extends State<UserHomeScreen> {
   @override
   void initState() {
     initPlatformState();
-    // callCategoriesApi();
+    callCategoriesApi();
     callProductsApi();
     super.initState();
   }
@@ -461,10 +461,10 @@ class _UserHomeScreenState extends State<UserHomeScreen> {
     setState(() {
       categories.addAll(jsonList.map((v) => Category.fromJson(v)));
     });
-    CategoryFilterRequest request = CategoryFilterRequest();
-    request.page=0;
-    request.size=10;
-    _bloc.add(CategoryFilterEvent(request));
+    // CategoryFilterRequest request = CategoryFilterRequest();
+    // request.page=0;
+    // request.size=10;
+    // _bloc.add(CategoryFilterEvent(request));
   }
 
 

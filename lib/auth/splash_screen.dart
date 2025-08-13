@@ -40,7 +40,7 @@ class _SplashScreenState extends State<SplashScreen> with SingleTickerProviderSt
   @override
   void initState() {
     initPlatformState();
-    _checkLoginStatus();
+
     _c = AnimationController(
       vsync: this,
       duration: const Duration(milliseconds: 900),
@@ -55,6 +55,7 @@ class _SplashScreenState extends State<SplashScreen> with SingleTickerProviderSt
 
     // kick it off
     _c.forward();
+    _checkLoginStatus();
 
     super.initState();
   }

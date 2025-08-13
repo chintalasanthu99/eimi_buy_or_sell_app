@@ -60,6 +60,9 @@ dependencies:
   equatable: ^2.0.5
   intl: any
 
+  lottie: ^2.2.0
+  shimmer: ^2.0.0
+
 dev_dependencies:
   flutter_test:
     sdk: flutter
@@ -86,7 +89,6 @@ flutter:
   assets:
     - assets/images/
     - assets/jsons/
-    - assets/images/profile_defalut.jpg
     - assets/jsons/categories.json
     - assets/images/service_category.jpg
     - assets/images/list_icon.png

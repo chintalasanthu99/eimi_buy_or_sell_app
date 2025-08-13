@@ -1,11 +1,9 @@
 import 'package:cached_network_image/cached_network_image.dart';
+import 'package:eimi_buy_or_sell_app/user/product_details_screen.dart';
 import 'package:eimi_buy_or_sell_app/utils/core/core.dart';
 import 'package:flutter/material.dart';
 
 import '../utils/app_colors.dart';
-import '../utils/size_utils.dart';
-import '../utils/text_utils.dart';
-import '../vendor/product_details_screen.dart';
 
 class ProductCard extends StatelessWidget {
   final Map<String, dynamic> item;

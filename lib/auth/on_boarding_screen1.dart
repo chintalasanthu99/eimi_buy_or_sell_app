@@ -1,4 +1,5 @@
 
+import 'package:eimi_buy_or_sell_app/auth/login_screen.dart';
 import 'package:eimi_buy_or_sell_app/auth/signup_screen.dart';
 import 'package:eimi_buy_or_sell_app/user_main_home_screen.dart';
 import 'package:eimi_buy_or_sell_app/utils/app_colors.dart';
@@ -14,7 +15,8 @@ import 'package:fluttertoast/fluttertoast.dart';
 
 
 class OnBoardingScreen1 extends StatefulWidget {
-  const OnBoardingScreen1({super.key});
+  final String? type;
+  const OnBoardingScreen1({super.key,this.type});
 
   @override
   State<OnBoardingScreen1> createState() => _OnBoardingScreen1State();
@@ -238,16 +240,24 @@ class _OnBoardingScreen1State extends State<OnBoardingScreen1> {
             color: AppColors.primary,
             borderRadius: BorderRadius.circular(8)),
         child: customThemeText(
-            "Sign Up",16,
+            "Continue",16,
             fontWeight: FontWeight.w600,
             color: Colors.white,
             textAlign: TextAlign.center
         )
     ).onTap((){
-      Navigator.push(
-        context,
-        MaterialPageRoute(builder: (_) =>  SignUpScreen(role: selectedRole,)),
-      );
+      if(widget.type!=null && widget.type == "login"){
+        Navigator.push(
+          context,
+          MaterialPageRoute(builder: (_) =>  LoginScreen(role: selectedRole,)),
+        );
+      }else if(widget.type!=null && widget.type == "signup"){
+        Navigator.push(
+          context,
+          MaterialPageRoute(builder: (_) =>  SignUpScreen(role: selectedRole,)),
+        );
+      }
+
     });
   }
 

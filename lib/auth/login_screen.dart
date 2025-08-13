@@ -23,7 +23,8 @@ enum Role { buyer, seller }
 
 
 class LoginScreen extends StatefulWidget {
-  const LoginScreen({super.key});
+  final String? role;
+   const LoginScreen({super.key,this.role});
 
   @override
   State<LoginScreen> createState() => _LoginScreenState();
@@ -151,8 +152,6 @@ class _LoginScreenState extends State<LoginScreen> {
                       ],
                     ),
                   ),
-                  VerticalSpace(height: 20,),
-                  _buildRoleToggle(),
 
 
                   //BODY

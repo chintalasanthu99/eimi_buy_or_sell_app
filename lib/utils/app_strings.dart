@@ -35,4 +35,9 @@ class AppStrings {
   static const chennai = "Chennai";
 
   static const selectLocation = "Select your location";
+
+  static const String NO_NETWORK = "No Network";
+
+  static const String SOMETHING_WENT_WRONG = "Some thing went wrong";
+  static const String LOADING = "Loading";
 }
