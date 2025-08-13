@@ -1,675 +1,252 @@
 [
   {
-    "id": "cars_1",
-    "title": "Cars Product 1",
-    "description": "This is a sample product 1 in Cars.",
-    "price": 1000,
+    "id": "8f8f6a2b-1d2d-4a9f-8d7d-3d4f4b1f9c01",
+    "title": "Maruti Suzuki Swift VXI 2022",
+    "description": "Well-maintained 2022 Swift VXI, single owner, service history available.",
+    "price": 640000,
+    "commissionAmount": 6400,
     "images": [
-      "https://example.com/cars_1.jpg"
+      "https://example.com/images/swift_vxi_2022_1.jpg",
+      "https://example.com/images/swift_vxi_2022_2.jpg"
     ],
-    "categoryId": "d4735e3a-265e-4f70-a325-7c123f1e91fc",
-    "subCategoryId": null,
-    "location": "Sample City",
-    "latitude": 20.5937,
-    "longitude": 78.9629,
-    "userId": "user_0",
-    "userPhone": "900000000",
-    "isNegotiable": false,
-    "condition": "New",
-    "isFeatured": false,
-    "status": "active",
-    "createdTimeStamp": "2025-07-13T17:55:32Z",
-    "updatedTimeStamp": "2025-07-13T17:55:32Z",
-    "views": 10,
-    "likes": 0,
-    "attributes": {
-      "Sample Attribute": "Value 1",
-      "Another Detail": "Detail 0"
-    }
-  },
-  {
-    "id": "cars_2",
-    "title": "Cars Product 2",
-    "description": "This is a sample product 2 in Cars.",
-    "price": 2000,
-    "images": [
-      "https://example.com/cars_2.jpg"
-    ],
-    "categoryId": "d4735e3a-265e-4f70-a325-7c123f1e91fc",
-    "subCategoryId": null,
-    "location": "Sample City",
-    "latitude": 20.5937,
-    "longitude": 78.9629,
-    "userId": "user_0",
-    "userPhone": "900000001",
-    "isNegotiable": true,
-    "condition": "Used",
-    "isFeatured": true,
-    "status": "active",
-    "createdTimeStamp": "2025-07-13T17:55:32Z",
-    "updatedTimeStamp": "2025-07-13T17:55:32Z",
-    "views": 20,
-    "likes": 2,
-    "attributes": {
-      "Sample Attribute": "Value 2",
-      "Another Detail": "Detail 1"
-    }
-  },
-  {
-    "id": "properties_1",
-    "title": "Properties Product 1",
-    "description": "This is a sample product 1 in Properties.",
-    "price": 1500,
-    "images": [
-      "https://example.com/properties_1.jpg"
-    ],
-    "categoryId": "b1f314c1-5b2a-44e6-9620-c92a86fc4c8e",
-    "subCategoryId": null,
-    "location": "Sample City",
-    "latitude": 20.5937,
-    "longitude": 78.9629,
-    "userId": "user_1",
-    "userPhone": "900000001",
-    "isNegotiable": false,
-    "condition": "New",
-    "isFeatured": true,
-    "status": "active",
-    "createdTimeStamp": "2025-07-13T17:55:32Z",
-    "updatedTimeStamp": "2025-07-13T17:55:32Z",
-    "views": 10,
-    "likes": 0,
-    "attributes": {
-      "Sample Attribute": "Value 1",
-      "Another Detail": "Detail 1"
-    }
-  },
-  {
-    "id": "properties_2",
-    "title": "Properties Product 2",
-    "description": "This is a sample product 2 in Properties.",
-    "price": 2500,
-    "images": [
-      "https://example.com/properties_2.jpg"
-    ],
-    "categoryId": "b1f314c1-5b2a-44e6-9620-c92a86fc4c8e",
-    "subCategoryId": null,
-    "location": "Sample City",
-    "latitude": 20.5937,
-    "longitude": 78.9629,
-    "userId": "user_1",
-    "userPhone": "900000002",
+    "category": { "id": "0b8a3e2f-0a1c-4d3c-8f0b-0f5b3a7a9a10", "name": "Cars" },
+    "subCategory": { "id": "3d9b2a6a-2e11-42d8-8c4f-9c3d9a7b2c81", "name": "Hatchback" },
+    "location": {
+      "name": "Bengaluru, Karnataka",
+      "city": "Bengaluru",
+      "state": "Karnataka",
+      "country": "India",
+      "latitude": 12.9716,
+      "longitude": 77.5946
+    },
+    "productStatus": "APPROVED",
+    "vendorId": "a1a3b2b4-9c2e-4b6a-b5f1-8d2e1c3b4a55",
+    "vendorContactDetails": {
+      "name": "ABC Motors",
+      "phone": "+91 9876543210",
+      "email": "sales.blr@abcmotors.example"
+    },
     "isNegotiable": true,
     "condition": "Used",
     "isFeatured": false,
-    "status": "active",
+    "active": true,
+    "sold": false,
+    "createdBy": { "id": "c2d3e4f5-1111-4aaa-8888-999999999001", "name": "System" },
+    "updatedBy": { "id": "c2d3e4f5-1111-4aaa-8888-999999999001", "name": "System" },
     "createdTimeStamp": "2025-07-13T17:55:32Z",
-    "updatedTimeStamp": "2025-07-13T17:55:32Z",
-    "views": 20,
-    "likes": 2,
+    "updatedTimeStamp": "2025-08-10T10:12:05Z",
+    "views": 120,
+    "likes": 7,
     "attributes": {
-      "Sample Attribute": "Value 2",
-      "Another Detail": "Detail 2"
+      "Brand": "Maruti Suzuki",
+      "Model": "Swift VXI",
+      "Year": 2022,
+      "Fuel": "Petrol",
+      "Transmission": "Manual",
+      "KMs Driven": 21000,
+      "Owner": "First",
+      "Color": "Red",
+      "RTO": "KA-01"
     }
   },
   {
-    "id": "mobiles_1",
-    "title": "Mobiles Product 1",
-    "description": "This is a sample product 1 in Mobiles.",
-    "price": 2000,
+    "id": "2f7e6d5c-4b3a-4a29-bc1a-8e7f2a1b0c22",
+    "title": "Hyundai Creta SX 1.5 Petrol 2021",
+    "description": "Creta SX 1.5P, sunroof, Android Auto/CarPlay, comprehensive insurance.",
+    "price": 1350000,
+    "commissionAmount": 13500,
     "images": [
-      "https://example.com/mobiles_1.jpg"
+      "https://example.com/images/creta_sx_2021_1.jpg",
+      "https://example.com/images/creta_sx_2021_2.jpg"
     ],
-    "categoryId": "ca113cdf-6ec3-4b86-9642-fb17b7d9f13f",
-    "subCategoryId": null,
-    "location": "Sample City",
-    "latitude": 20.5937,
-    "longitude": 78.9629,
-    "userId": "user_2",
-    "userPhone": "900000002",
-    "isNegotiable": false,
-    "condition": "New",
-    "isFeatured": false,
-    "status": "active",
-    "createdTimeStamp": "2025-07-13T17:55:32Z",
-    "updatedTimeStamp": "2025-07-13T17:55:32Z",
-    "views": 10,
-    "likes": 0,
-    "attributes": {
-      "Sample Attribute": "Value 1",
-      "Another Detail": "Detail 2"
-    }
-  },
-  {
-    "id": "mobiles_2",
-    "title": "Mobiles Product 2",
-    "description": "This is a sample product 2 in Mobiles.",
-    "price": 3000,
-    "images": [
-      "https://example.com/mobiles_2.jpg"
-    ],
-    "categoryId": "ca113cdf-6ec3-4b86-9642-fb17b7d9f13f",
-    "subCategoryId": null,
-    "location": "Sample City",
-    "latitude": 20.5937,
-    "longitude": 78.9629,
-    "userId": "user_2",
-    "userPhone": "900000003",
+    "category": { "id": "0b8a3e2f-0a1c-4d3c-8f0b-0f5b3a7a9a10", "name": "Cars" },
+    "subCategory": { "id": "8a7b6c5d-4e3f-4a2b-9c1d-0e2f3a4b5c66", "name": "SUV" },
+    "location": {
+      "name": "Hyderabad, Telangana",
+      "city": "Hyderabad",
+      "state": "Telangana",
+      "country": "India",
+      "latitude": 17.385,
+      "longitude": 78.4867
+    },
+    "productStatus": "APPROVED",
+    "vendorId": "b3c4d5e6-7f81-4a92-8b03-1c2d3e4f5a66",
+    "vendorContactDetails": {
+      "name": "Skyline Auto",
+      "phone": "+91 9000000001",
+      "email": "contact@skylineauto.example"
+    },
     "isNegotiable": true,
     "condition": "Used",
     "isFeatured": true,
-    "status": "active",
-    "createdTimeStamp": "2025-07-13T17:55:32Z",
-    "updatedTimeStamp": "2025-07-13T17:55:32Z",
-    "views": 20,
-    "likes": 2,
+    "active": true,
+    "sold": false,
+    "createdBy": { "id": "c2d3e4f5-1111-4aaa-8888-999999999001", "name": "System" },
+    "updatedBy": { "id": "c2d3e4f5-1111-4aaa-8888-999999999001", "name": "System" },
+    "createdTimeStamp": "2025-07-20T09:30:00Z",
+    "updatedTimeStamp": "2025-08-11T14:22:40Z",
+    "views": 245,
+    "likes": 18,
     "attributes": {
-      "Sample Attribute": "Value 2",
-      "Another Detail": "Detail 3"
+      "Brand": "Hyundai",
+      "Model": "Creta SX",
+      "Year": 2021,
+      "Fuel": "Petrol",
+      "Transmission": "Manual",
+      "KMs Driven": 32000,
+      "Owner": "First",
+      "Color": "White",
+      "RTO": "TS-09"
     }
   },
   {
-    "id": "jobs_1",
-    "title": "Jobs Product 1",
-    "description": "This is a sample product 1 in Jobs.",
-    "price": 2500,
+    "id": "9a8b7c6d-5e4f-4a31-9b2c-1d2e3f4a5b73",
+    "title": "Honda City VX i-VTEC 2020",
+    "description": "City VX i-VTEC 2020, top condition, zero accidents, new tyres.",
+    "price": 1050000,
+    "commissionAmount": 10500,
     "images": [
-      "https://example.com/jobs_1.jpg"
+      "https://example.com/images/honda_city_vx_2020_1.jpg",
+      "https://example.com/images/honda_city_vx_2020_2.jpg"
     ],
-    "categoryId": "1770a635-92cb-41bc-badd-e26d9d7ef3c3",
-    "subCategoryId": null,
-    "location": "Sample City",
-    "latitude": 20.5937,
-    "longitude": 78.9629,
-    "userId": "user_3",
-    "userPhone": "900000003",
+    "category": { "id": "0b8a3e2f-0a1c-4d3c-8f0b-0f5b3a7a9a10", "name": "Cars" },
+    "subCategory": { "id": "4a3b2c1d-2e3f-4a5b-9c6d-7e8f9a0b1c77", "name": "Sedan" },
+    "location": {
+      "name": "Pune, Maharashtra",
+      "city": "Pune",
+      "state": "Maharashtra",
+      "country": "India",
+      "latitude": 18.5204,
+      "longitude": 73.8567
+    },
+    "productStatus": "APPROVED",
+    "vendorId": "d6e7f8a9-0b1c-4d2e-9f3a-5b6c7d8e9f77",
+    "vendorContactDetails": {
+      "name": "Prime Wheels",
+      "phone": "+91 9000000002",
+      "email": "sales@primewheels.example"
+    },
     "isNegotiable": false,
-    "condition": "New",
-    "isFeatured": true,
-    "status": "active",
-    "createdTimeStamp": "2025-07-13T17:55:32Z",
-    "updatedTimeStamp": "2025-07-13T17:55:32Z",
-    "views": 10,
-    "likes": 0,
-    "attributes": {
-      "Sample Attribute": "Value 1",
-      "Another Detail": "Detail 3"
-    }
-  },
-  {
-    "id": "jobs_2",
-    "title": "Jobs Product 2",
-    "description": "This is a sample product 2 in Jobs.",
-    "price": 3500,
-    "images": [
-      "https://example.com/jobs_2.jpg"
-    ],
-    "categoryId": "1770a635-92cb-41bc-badd-e26d9d7ef3c3",
-    "subCategoryId": null,
-    "location": "Sample City",
-    "latitude": 20.5937,
-    "longitude": 78.9629,
-    "userId": "user_3",
-    "userPhone": "900000004",
-    "isNegotiable": true,
     "condition": "Used",
     "isFeatured": false,
-    "status": "active",
-    "createdTimeStamp": "2025-07-13T17:55:32Z",
-    "updatedTimeStamp": "2025-07-13T17:55:32Z",
-    "views": 20,
-    "likes": 2,
+    "active": true,
+    "sold": false,
+    "createdBy": { "id": "c2d3e4f5-1111-4aaa-8888-999999999001", "name": "System" },
+    "updatedBy": { "id": "c2d3e4f5-1111-4aaa-8888-999999999001", "name": "System" },
+    "createdTimeStamp": "2025-07-28T11:05:10Z",
+    "updatedTimeStamp": "2025-08-12T08:15:55Z",
+    "views": 178,
+    "likes": 11,
     "attributes": {
-      "Sample Attribute": "Value 2",
-      "Another Detail": "Detail 4"
+      "Brand": "Honda",
+      "Model": "City VX i-VTEC",
+      "Year": 2020,
+      "Fuel": "Petrol",
+      "Transmission": "Manual",
+      "KMs Driven": 28000,
+      "Owner": "First",
+      "Color": "Silver",
+      "RTO": "MH-12"
     }
   },
   {
-    "id": "bikes_1",
-    "title": "Bikes Product 1",
-    "description": "This is a sample product 1 in Bikes.",
-    "price": 3000,
+    "id": "1b2c3d4e-5f60-4a71-8b82-9c0d1e2f3a84",
+    "title": "Tata Nexon XZ+ 2023 (Petrol)",
+    "description": "2023 Nexon XZ+ with connected tech, dual airbags, alloy wheels.",
+    "price": 1280000,
+    "commissionAmount": 12800,
     "images": [
-      "https://example.com/bikes_1.jpg"
+      "https://example.com/images/tata_nexon_xzplus_2023_1.jpg",
+      "https://example.com/images/tata_nexon_xzplus_2023_2.jpg"
     ],
-    "categoryId": "917778c4-3a9b-4562-8ec1-b8b0485a05a0",
-    "subCategoryId": null,
-    "location": "Sample City",
-    "latitude": 20.5937,
-    "longitude": 78.9629,
-    "userId": "user_4",
-    "userPhone": "900000004",
-    "isNegotiable": false,
-    "condition": "New",
-    "isFeatured": false,
-    "status": "active",
-    "createdTimeStamp": "2025-07-13T17:55:32Z",
-    "updatedTimeStamp": "2025-07-13T17:55:32Z",
-    "views": 10,
-    "likes": 0,
-    "attributes": {
-      "Sample Attribute": "Value 1",
-      "Another Detail": "Detail 4"
-    }
-  },
-  {
-    "id": "bikes_2",
-    "title": "Bikes Product 2",
-    "description": "This is a sample product 2 in Bikes.",
-    "price": 4000,
-    "images": [
-      "https://example.com/bikes_2.jpg"
-    ],
-    "categoryId": "917778c4-3a9b-4562-8ec1-b8b0485a05a0",
-    "subCategoryId": null,
-    "location": "Sample City",
-    "latitude": 20.5937,
-    "longitude": 78.9629,
-    "userId": "user_4",
-    "userPhone": "900000005",
+    "category": { "id": "0b8a3e2f-0a1c-4d3c-8f0b-0f5b3a7a9a10", "name": "Cars" },
+    "subCategory": { "id": "7c6d5e4f-3a2b-4c5d-9e0f-1a2b3c4d5e88", "name": "Compact SUV" },
+    "location": {
+      "name": "Gurugram, Haryana",
+      "city": "Gurugram",
+      "state": "Haryana",
+      "country": "India",
+      "latitude": 28.4595,
+      "longitude": 77.0266
+    },
+    "productStatus": "APPROVED",
+    "vendorId": "aa11bb22-cc33-44dd-88ee-ff0011223344",
+    "vendorContactDetails": {
+      "name": "Metro Autohaus",
+      "phone": "+91 9000000003",
+      "email": "team@metroautohaus.example"
+    },
     "isNegotiable": true,
     "condition": "Used",
     "isFeatured": true,
-    "status": "active",
-    "createdTimeStamp": "2025-07-13T17:55:32Z",
-    "updatedTimeStamp": "2025-07-13T17:55:32Z",
-    "views": 20,
-    "likes": 2,
+    "active": true,
+    "sold": false,
+    "createdBy": { "id": "c2d3e4f5-1111-4aaa-8888-999999999001", "name": "System" },
+    "updatedBy": { "id": "c2d3e4f5-1111-4aaa-8888-999999999001", "name": "System" },
+    "createdTimeStamp": "2025-08-01T06:45:00Z",
+    "updatedTimeStamp": "2025-08-13T16:40:12Z",
+    "views": 305,
+    "likes": 24,
     "attributes": {
-      "Sample Attribute": "Value 2",
-      "Another Detail": "Detail 5"
+      "Brand": "Tata",
+      "Model": "Nexon XZ+",
+      "Year": 2023,
+      "Fuel": "Petrol",
+      "Transmission": "Manual",
+      "KMs Driven": 12000,
+      "Owner": "First",
+      "Color": "Blue",
+      "RTO": "HR-26"
     }
   },
   {
-    "id": "electronic_&_appliances_1",
-    "title": "Electronic & Appliances Product 1",
-    "description": "This is a sample product 1 in Electronic & Appliances.",
-    "price": 3500,
+    "id": "5e6f7a8b-9c0d-4e1f-a2b3-c4d5e6f7a995",
+    "title": "Toyota Innova Crysta 2.4 GX 2019",
+    "description": "Innova Crysta 2.4 GX, 7-seater, excellent for family/taxi use, service record available.",
+    "price": 1850000,
+    "commissionAmount": 18500,
     "images": [
-      "https://example.com/electronic_&_appliances_1.jpg"
+      "https://example.com/images/innova_crysta_2019_1.jpg",
+      "https://example.com/images/innova_crysta_2019_2.jpg"
     ],
-    "categoryId": "44d4e1b0-5fb6-4f6d-b87e-8fcf37f0f92a",
-    "subCategoryId": null,
-    "location": "Sample City",
-    "latitude": 20.5937,
-    "longitude": 78.9629,
-    "userId": "user_5",
-    "userPhone": "900000005",
+    "category": { "id": "0b8a3e2f-0a1c-4d3c-8f0b-0f5b3a7a9a10", "name": "Cars" },
+    "subCategory": { "id": "9d8e7f6a-5b4c-4d3e-8f2a-1b0c9d8e7f99", "name": "MPV" },
+    "location": {
+      "name": "Mumbai, Maharashtra",
+      "city": "Mumbai",
+      "state": "Maharashtra",
+      "country": "India",
+      "latitude": 19.076,
+      "longitude": 72.8777
+    },
+    "productStatus": "APPROVED",
+    "vendorId": "bb22cc33-dd44-55ee-99ff-001122334455",
+    "vendorContactDetails": {
+      "name": "Seaview Cars",
+      "phone": "+91 9000000004",
+      "email": "info@seaviewcars.example"
+    },
     "isNegotiable": false,
-    "condition": "New",
-    "isFeatured": true,
-    "status": "active",
-    "createdTimeStamp": "2025-07-13T17:55:32Z",
-    "updatedTimeStamp": "2025-07-13T17:55:32Z",
-    "views": 10,
-    "likes": 0,
-    "attributes": {
-      "Sample Attribute": "Value 1",
-      "Another Detail": "Detail 5"
-    }
-  },
-  {
-    "id": "electronic_&_appliances_2",
-    "title": "Electronic & Appliances Product 2",
-    "description": "This is a sample product 2 in Electronic & Appliances.",
-    "price": 4500,
-    "images": [
-      "https://example.com/electronic_&_appliances_2.jpg"
-    ],
-    "categoryId": "44d4e1b0-5fb6-4f6d-b87e-8fcf37f0f92a",
-    "subCategoryId": null,
-    "location": "Sample City",
-    "latitude": 20.5937,
-    "longitude": 78.9629,
-    "userId": "user_5",
-    "userPhone": "900000006",
-    "isNegotiable": true,
     "condition": "Used",
     "isFeatured": false,
-    "status": "active",
-    "createdTimeStamp": "2025-07-13T17:55:32Z",
-    "updatedTimeStamp": "2025-07-13T17:55:32Z",
-    "views": 20,
-    "likes": 2,
+    "active": true,
+    "sold": false,
+    "createdBy": { "id": "c2d3e4f5-1111-4aaa-8888-999999999001", "name": "System" },
+    "updatedBy": { "id": "c2d3e4f5-1111-4aaa-8888-999999999001", "name": "System" },
+    "createdTimeStamp": "2025-07-10T13:20:00Z",
+    "updatedTimeStamp": "2025-08-09T09:18:47Z",
+    "views": 389,
+    "likes": 31,
     "attributes": {
-      "Sample Attribute": "Value 2",
-      "Another Detail": "Detail 6"
-    }
-  },
-  {
-    "id": "commercial_vehicles_&_spares_1",
-    "title": "Commercial Vehicles & Spares Product 1",
-    "description": "This is a sample product 1 in Commercial Vehicles & Spares.",
-    "price": 4000,
-    "images": [
-      "https://example.com/commercial_vehicles_&_spares_1.jpg"
-    ],
-    "categoryId": "2d2efb2a-0dc6-46bb-b403-6a4e51955a18",
-    "subCategoryId": null,
-    "location": "Sample City",
-    "latitude": 20.5937,
-    "longitude": 78.9629,
-    "userId": "user_6",
-    "userPhone": "900000006",
-    "isNegotiable": false,
-    "condition": "New",
-    "isFeatured": false,
-    "status": "active",
-    "createdTimeStamp": "2025-07-13T17:55:32Z",
-    "updatedTimeStamp": "2025-07-13T17:55:32Z",
-    "views": 10,
-    "likes": 0,
-    "attributes": {
-      "Sample Attribute": "Value 1",
-      "Another Detail": "Detail 6"
-    }
-  },
-  {
-    "id": "commercial_vehicles_&_spares_2",
-    "title": "Commercial Vehicles & Spares Product 2",
-    "description": "This is a sample product 2 in Commercial Vehicles & Spares.",
-    "price": 5000,
-    "images": [
-      "https://example.com/commercial_vehicles_&_spares_2.jpg"
-    ],
-    "categoryId": "2d2efb2a-0dc6-46bb-b403-6a4e51955a18",
-    "subCategoryId": null,
-    "location": "Sample City",
-    "latitude": 20.5937,
-    "longitude": 78.9629,
-    "userId": "user_6",
-    "userPhone": "900000007",
-    "isNegotiable": true,
-    "condition": "Used",
-    "isFeatured": true,
-    "status": "active",
-    "createdTimeStamp": "2025-07-13T17:55:32Z",
-    "updatedTimeStamp": "2025-07-13T17:55:32Z",
-    "views": 20,
-    "likes": 2,
-    "attributes": {
-      "Sample Attribute": "Value 2",
-      "Another Detail": "Detail 7"
-    }
-  },
-  {
-    "id": "furniture_1",
-    "title": "Furniture Product 1",
-    "description": "This is a sample product 1 in Furniture.",
-    "price": 4500,
-    "images": [
-      "https://example.com/furniture_1.jpg"
-    ],
-    "categoryId": "2c582f0a-ef55-42c7-a2b4-130219f609d9",
-    "subCategoryId": null,
-    "location": "Sample City",
-    "latitude": 20.5937,
-    "longitude": 78.9629,
-    "userId": "user_7",
-    "userPhone": "900000007",
-    "isNegotiable": false,
-    "condition": "New",
-    "isFeatured": true,
-    "status": "active",
-    "createdTimeStamp": "2025-07-13T17:55:32Z",
-    "updatedTimeStamp": "2025-07-13T17:55:32Z",
-    "views": 10,
-    "likes": 0,
-    "attributes": {
-      "Sample Attribute": "Value 1",
-      "Another Detail": "Detail 7"
-    }
-  },
-  {
-    "id": "furniture_2",
-    "title": "Furniture Product 2",
-    "description": "This is a sample product 2 in Furniture.",
-    "price": 5500,
-    "images": [
-      "https://example.com/furniture_2.jpg"
-    ],
-    "categoryId": "2c582f0a-ef55-42c7-a2b4-130219f609d9",
-    "subCategoryId": null,
-    "location": "Sample City",
-    "latitude": 20.5937,
-    "longitude": 78.9629,
-    "userId": "user_7",
-    "userPhone": "900000008",
-    "isNegotiable": true,
-    "condition": "Used",
-    "isFeatured": false,
-    "status": "active",
-    "createdTimeStamp": "2025-07-13T17:55:32Z",
-    "updatedTimeStamp": "2025-07-13T17:55:32Z",
-    "views": 20,
-    "likes": 2,
-    "attributes": {
-      "Sample Attribute": "Value 2",
-      "Another Detail": "Detail 8"
-    }
-  },
-  {
-    "id": "fashion_1",
-    "title": "Fashion Product 1",
-    "description": "This is a sample product 1 in Fashion.",
-    "price": 5000,
-    "images": [
-      "https://example.com/fashion_1.jpg"
-    ],
-    "categoryId": "64dc5d57-e254-4294-8e52-8ab30e6f5a06",
-    "subCategoryId": null,
-    "location": "Sample City",
-    "latitude": 20.5937,
-    "longitude": 78.9629,
-    "userId": "user_8",
-    "userPhone": "900000008",
-    "isNegotiable": false,
-    "condition": "New",
-    "isFeatured": false,
-    "status": "active",
-    "createdTimeStamp": "2025-07-13T17:55:32Z",
-    "updatedTimeStamp": "2025-07-13T17:55:32Z",
-    "views": 10,
-    "likes": 0,
-    "attributes": {
-      "Sample Attribute": "Value 1",
-      "Another Detail": "Detail 8"
-    }
-  },
-  {
-    "id": "fashion_2",
-    "title": "Fashion Product 2",
-    "description": "This is a sample product 2 in Fashion.",
-    "price": 6000,
-    "images": [
-      "https://example.com/fashion_2.jpg"
-    ],
-    "categoryId": "64dc5d57-e254-4294-8e52-8ab30e6f5a06",
-    "subCategoryId": null,
-    "location": "Sample City",
-    "latitude": 20.5937,
-    "longitude": 78.9629,
-    "userId": "user_8",
-    "userPhone": "900000009",
-    "isNegotiable": true,
-    "condition": "Used",
-    "isFeatured": true,
-    "status": "active",
-    "createdTimeStamp": "2025-07-13T17:55:32Z",
-    "updatedTimeStamp": "2025-07-13T17:55:32Z",
-    "views": 20,
-    "likes": 2,
-    "attributes": {
-      "Sample Attribute": "Value 2",
-      "Another Detail": "Detail 9"
-    }
-  },
-  {
-    "id": "books_sports_&_hobbies_1",
-    "title": "Books Sports & Hobbies Product 1",
-    "description": "This is a sample product 1 in Books Sports & Hobbies.",
-    "price": 5500,
-    "images": [
-      "https://example.com/books_sports_&_hobbies_1.jpg"
-    ],
-    "categoryId": "8934f83d-98dc-46e2-9b57-9dbf2adba7f4",
-    "subCategoryId": null,
-    "location": "Sample City",
-    "latitude": 20.5937,
-    "longitude": 78.9629,
-    "userId": "user_9",
-    "userPhone": "900000009",
-    "isNegotiable": false,
-    "condition": "New",
-    "isFeatured": true,
-    "status": "active",
-    "expiresAt": "2025-09-13T17:55:32Z",
-    "createdTimeStamp": "2025-07-13T17:55:32Z",
-    "updatedTimeStamp": "2025-07-13T17:55:32Z",
-    "views": 10,
-    "likes": 0,
-    "attributes": {
-      "Sample Attribute": "Value 1",
-      "Another Detail": "Detail 9"
-    }
-  },
-  {
-    "id": "books_sports_&_hobbies_2",
-    "title": "Books Sports & Hobbies Product 2",
-    "description": "This is a sample product 2 in Books Sports & Hobbies.",
-    "price": 6500,
-    "images": [
-      "https://example.com/books_sports_&_hobbies_2.jpg"
-    ],
-    "categoryId": "8934f83d-98dc-46e2-9b57-9dbf2adba7f4",
-    "subCategoryId": null,
-    "location": "Sample City",
-    "latitude": 20.5937,
-    "longitude": 78.9629,
-    "userId": "user_9",
-    "userPhone": "9000000010",
-    "isNegotiable": true,
-    "condition": "Used",
-    "isFeatured": false,
-    "status": "active",
-    "createdTimeStamp": "2025-07-13T17:55:32Z",
-    "updatedTimeStamp": "2025-07-13T17:55:32Z",
-    "views": 20,
-    "likes": 2,
-    "attributes": {
-      "Sample Attribute": "Value 2",
-      "Another Detail": "Detail 10"
-    }
-  },
-  {
-    "id": "pets_1",
-    "title": "Pets Product 1",
-    "description": "This is a sample product 1 in Pets.",
-    "price": 6000,
-    "images": [
-      "https://example.com/pets_1.jpg"
-    ],
-    "categoryId": "0d129fd5-99f4-45f5-8a0a-51e612fefc2b",
-    "subCategoryId": null,
-    "location": "Sample City",
-    "latitude": 20.5937,
-    "longitude": 78.9629,
-    "userId": "user_10",
-    "userPhone": "9000000010",
-    "isNegotiable": false,
-    "condition": "New",
-    "isFeatured": false,
-    "status": "active",
-    "createdTimeStamp": "2025-07-13T17:55:32Z",
-    "updatedTimeStamp": "2025-07-13T17:55:32Z",
-    "views": 10,
-    "likes": 0,
-    "attributes": {
-      "Sample Attribute": "Value 1",
-      "Another Detail": "Detail 10"
-    }
-  },
-  {
-    "id": "pets_2",
-    "title": "Pets Product 2",
-    "description": "This is a sample product 2 in Pets.",
-    "price": 7000,
-    "images": [
-      "https://example.com/pets_2.jpg"
-    ],
-    "categoryId": "0d129fd5-99f4-45f5-8a0a-51e612fefc2b",
-    "subCategoryId": null,
-    "location": "Sample City",
-    "latitude": 20.5937,
-    "longitude": 78.9629,
-    "userId": "user_10",
-    "userPhone": "9000000011",
-    "isNegotiable": true,
-    "condition": "Used",
-    "isFeatured": true,
-    "status": "active",
-    "createdTimeStamp": "2025-07-13T17:55:32Z",
-    "updatedTimeStamp": "2025-07-13T17:55:32Z",
-    "views": 20,
-    "likes": 2,
-    "attributes": {
-      "Sample Attribute": "Value 2",
-      "Another Detail": "Detail 11"
-    }
-  },
-  {
-    "id": "services_1",
-    "title": "Services Product 1",
-    "description": "This is a sample product 1 in Services.",
-    "price": 6500,
-    "images": [
-      "https://example.com/services_1.jpg"
-    ],
-    "categoryId": "2fbe5cf5-349f-4b1c-90b8-9b36ffda4967",
-    "subCategoryId": null,
-    "location": "Sample City",
-    "latitude": 20.5937,
-    "longitude": 78.9629,
-    "userId": "user_11",
-    "userPhone": "9000000011",
-    "isNegotiable": false,
-    "condition": "New",
-    "isFeatured": true,
-    "status": "active",
-    "createdTimeStamp": "2025-07-13T17:55:32Z",
-    "updatedTimeStamp": "2025-07-13T17:55:32Z",
-    "views": 10,
-    "likes": 0,
-    "attributes": {
-      "Sample Attribute": "Value 1",
-      "Another Detail": "Detail 11"
-    }
-  },
-  {
-    "id": "services_2",
-    "title": "Services Product 2",
-    "description": "This is a sample product 2 in Services.",
-    "price": 7500,
-    "images": [
-      "https://example.com/services_2.jpg"
-    ],
-    "categoryId": "2fbe5cf5-349f-4b1c-90b8-9b36ffda4967",
-    "subCategoryId": null,
-    "location": "Sample City",
-    "latitude": 20.5937,
-    "longitude": 78.9629,
-    "userId": "user_11",
-    "userPhone": "9000000012",
-    "isNegotiable": true,
-    "condition": "Used",
-    "isFeatured": false,
-    "status": "active",
-    "createdTimeStamp": "2025-07-13T17:55:32Z",
-    "updatedTimeStamp": "2025-07-13T17:55:32Z",
-    "views": 20,
-    "likes": 2,
-    "attributes": {
-      "Sample Attribute": "Value 2",
-      "Another Detail": "Detail 12"
+      "Brand": "Toyota",
+      "Model": "Innova Crysta 2.4 GX",
+      "Year": 2019,
+      "Fuel": "Diesel",
+      "Transmission": "Manual",
+      "KMs Driven": 56000,
+      "Owner": "Second",
+      "Color": "Grey",
+      "RTO": "MH-01"
     }
   }
 ]
