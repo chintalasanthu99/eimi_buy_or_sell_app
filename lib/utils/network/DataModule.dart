@@ -1,9 +1,9 @@
 
 import 'dart:io';
 
-import 'package:eimi_buy_or_sell_app/utils/AppDataHelper.dart';
-import 'package:eimi_buy_or_sell_app/utils/app_log.dart';
-import 'package:eimi_buy_or_sell_app/utils/sync_helper.dart';
+import 'package:Eimi/utils/AppDataHelper.dart';
+import 'package:Eimi/utils/app_log.dart';
+import 'package:Eimi/utils/sync_helper.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import '../shared_pref/shared_preference_helper.dart';

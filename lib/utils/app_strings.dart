@@ -3,8 +3,8 @@ class AppStrings {
   static const String stageEnv = "Stage";
   static const String testEnv = "Test";
   static const String prodEnv = "Prod";
-  static const String devURL = "https://dev-api.eimibuyorsell.com/";
-  static const String prodURL = "https://eimibuyorsell.com/";
+  static const String devURL = "https://dev-api.Eimibuyorsell.com/";
+  static const String prodURL = "https://Eimibuyorsell.com/";
   static const String localURL = "http://192.168.1.78:8008/";
 
   static const String noNetwork = "No Network";

@@ -1,4 +1,4 @@
-import 'package:eimi_buy_or_sell_app/auth/modles/login_request.dart';
+import 'package:Eimi/auth/modles/login_request.dart';
 import 'package:equatable/equatable.dart';
 import 'package:flutter/cupertino.dart';
 

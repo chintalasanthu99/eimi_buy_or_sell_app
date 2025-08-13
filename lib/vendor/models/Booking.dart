@@ -1,4 +1,4 @@
-import 'package:eimi_buy_or_sell_app/vendor/models/Product.dart';
+import 'package:Eimi/vendor/models/Product.dart';
 
 class BookingModel {
   final String id;

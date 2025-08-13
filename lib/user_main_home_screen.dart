@@ -1,7 +1,7 @@
-import 'package:eimi_buy_or_sell_app/user/user_bookings_screen.dart';
-import 'package:eimi_buy_or_sell_app/user/home/user_home_screen.dart';
-import 'package:eimi_buy_or_sell_app/user/user_profile_screen.dart';
-import 'package:eimi_buy_or_sell_app/utils/app_colors.dart';
+import 'package:Eimi/user/user_bookings_screen.dart';
+import 'package:Eimi/user/home/user_home_screen.dart';
+import 'package:Eimi/user/user_profile_screen.dart';
+import 'package:Eimi/utils/app_colors.dart';
 import 'package:flutter/material.dart';
 
 

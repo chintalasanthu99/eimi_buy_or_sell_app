@@ -2,11 +2,11 @@
 import 'dart:async';
 import 'package:bloc/bloc.dart';
 import 'package:dio/dio.dart';
-import 'package:eimi_buy_or_sell_app/utils/base_bloc/base_event.dart' hide BaseEvent;
-import 'package:eimi_buy_or_sell_app/utils/base_bloc/base_state.dart';
-import 'package:eimi_buy_or_sell_app/utils/network/base_response.dart';
-import 'package:eimi_buy_or_sell_app/vendor/vendor_home/vendor_home_bloc/vendor_home_event.dart';
-import 'package:eimi_buy_or_sell_app/vendor/vendor_home/vendor_home_bloc/vendor_home_repo.dart';
+import 'package:Eimi/utils/base_bloc/base_event.dart' hide BaseEvent;
+import 'package:Eimi/utils/base_bloc/base_state.dart';
+import 'package:Eimi/utils/network/base_response.dart';
+import 'package:Eimi/vendor/vendor_home/vendor_home_bloc/vendor_home_event.dart';
+import 'package:Eimi/vendor/vendor_home/vendor_home_bloc/vendor_home_repo.dart';
 import 'package:flutter/foundation.dart';
 import '../../../user/home/home_bloc/home_event.dart';
 

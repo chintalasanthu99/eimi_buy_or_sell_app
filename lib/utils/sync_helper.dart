@@ -1,8 +1,8 @@
 import 'dart:convert';
 
 import 'package:connectivity_plus/connectivity_plus.dart';
-import 'package:eimi_buy_or_sell_app/utils/AppDataHelper.dart';
-import 'package:eimi_buy_or_sell_app/utils/network/MyConectivity.dart';
+import 'package:Eimi/utils/AppDataHelper.dart';
+import 'package:Eimi/utils/network/MyConectivity.dart';
 
 
 

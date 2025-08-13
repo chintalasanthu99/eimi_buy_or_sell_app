@@ -1,7 +1,7 @@
-import 'package:eimi_buy_or_sell_app/utils/app_colors.dart';
-import 'package:eimi_buy_or_sell_app/utils/base_bloc/base_state.dart';
-import 'package:eimi_buy_or_sell_app/utils/core/core.dart';
-import 'package:eimi_buy_or_sell_app/vendor/vendor_home/vendor_home_bloc/vendor_home_bloc.dart';
+import 'package:Eimi/utils/app_colors.dart';
+import 'package:Eimi/utils/base_bloc/base_state.dart';
+import 'package:Eimi/utils/core/core.dart';
+import 'package:Eimi/vendor/vendor_home/vendor_home_bloc/vendor_home_bloc.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:fluttertoast/fluttertoast.dart';
@@ -162,7 +162,7 @@ class _UserNotificationScreenState extends State<UserNotificationScreen> {
                         child: CircleAvatar(
                           radius: deviceWidth(context)*0.1,
                           backgroundColor: AppColors.grey7.withValues(alpha: 0.80),
-                          child: Image.asset("assets/images/product_image.png",width: deviceWidth(context)*0.14,),)),
+                          child: Image.asset("assets/images/car_product2.png",width: deviceWidth(context)*0.14,),)),
                     HorizontalSpace(),
                     Expanded(
                       child: Container(

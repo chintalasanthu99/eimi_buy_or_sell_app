@@ -1,4 +1,4 @@
-import 'package:eimi_buy_or_sell_app/user/home/models/category_filter_request.dart';
+import 'package:Eimi/user/home/models/category_filter_request.dart';
 import 'package:equatable/equatable.dart';
 import 'package:flutter/cupertino.dart';
 

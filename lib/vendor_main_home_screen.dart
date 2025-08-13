@@ -1,7 +1,7 @@
-import 'package:eimi_buy_or_sell_app/utils/app_colors.dart';
-import 'package:eimi_buy_or_sell_app/vendor/product_listing_screen.dart';
-import 'package:eimi_buy_or_sell_app/vendor/vendor_home/vendor_home_screen.dart';
-import 'package:eimi_buy_or_sell_app/vendor/vendor_profile_screen.dart';
+import 'package:Eimi/utils/app_colors.dart';
+import 'package:Eimi/vendor/product_listing_screen.dart';
+import 'package:Eimi/vendor/vendor_home/vendor_home_screen.dart';
+import 'package:Eimi/vendor/vendor_profile_screen.dart';
 import 'package:flutter/material.dart';
 
 class VendorMainHomeScreen extends StatefulWidget {

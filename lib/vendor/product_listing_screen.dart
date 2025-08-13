@@ -1,7 +1,7 @@
-import 'package:eimi_buy_or_sell_app/utils/app_colors.dart';
-import 'package:eimi_buy_or_sell_app/utils/base_bloc/base_state.dart';
-import 'package:eimi_buy_or_sell_app/utils/core/core.dart';
-import 'package:eimi_buy_or_sell_app/vendor/vendor_home/vendor_home_bloc/vendor_home_bloc.dart';
+import 'package:Eimi/utils/app_colors.dart';
+import 'package:Eimi/utils/base_bloc/base_state.dart';
+import 'package:Eimi/utils/core/core.dart';
+import 'package:Eimi/vendor/vendor_home/vendor_home_bloc/vendor_home_bloc.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
@@ -214,7 +214,7 @@ class _VendorProductListScreenState extends State<VendorProductListScreen> {
                         height: deviceHeight(context)/6,
                         width: deviceWidth(context)/3,
                         decoration: BoxDecoration(
-                          image: DecorationImage(image: AssetImage("assets/images/product_image.png"))
+                          image: DecorationImage(image: AssetImage("assets/images/car_product2.png"))
                         ),
                       ),
                       Expanded(

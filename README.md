@@ -1,4 +1,4 @@
-# eimi_buy_or_sell_app
+# Eimi
 
 It all about buying and selling
 

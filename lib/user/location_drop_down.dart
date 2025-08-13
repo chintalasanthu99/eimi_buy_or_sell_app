@@ -1,4 +1,4 @@
-import 'package:eimi_buy_or_sell_app/utils/text_utils.dart';
+import 'package:Eimi/utils/text_utils.dart';
 import 'package:flutter/material.dart';
 import '../utils/app_strings.dart';
 

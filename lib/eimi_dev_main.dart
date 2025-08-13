@@ -1,11 +1,11 @@
 
-import 'package:eimi_buy_or_sell_app/utils/S3Constants.dart';
-import 'package:eimi_buy_or_sell_app/utils/app_strings.dart';
-import 'package:eimi_buy_or_sell_app/utils/app_theme.dart';
-import 'package:eimi_buy_or_sell_app/utils/flavour_config.dart';
-import 'package:eimi_buy_or_sell_app/utils/network/DataModule.dart';
-import 'package:eimi_buy_or_sell_app/utils/route_constants.dart';
-import 'package:eimi_buy_or_sell_app/utils/routes.dart';
+import 'package:Eimi/utils/S3Constants.dart';
+import 'package:Eimi/utils/app_strings.dart';
+import 'package:Eimi/utils/app_theme.dart';
+import 'package:Eimi/utils/flavour_config.dart';
+import 'package:Eimi/utils/network/DataModule.dart';
+import 'package:Eimi/utils/route_constants.dart';
+import 'package:Eimi/utils/routes.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 

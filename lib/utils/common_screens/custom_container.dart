@@ -1,10 +1,10 @@
 
-import 'package:eimi_buy_or_sell_app/utils/app_colors.dart';
-import 'package:eimi_buy_or_sell_app/utils/app_strings.dart';
-import 'package:eimi_buy_or_sell_app/utils/base_bloc/base_state.dart';
-import 'package:eimi_buy_or_sell_app/utils/common_screens/errorscreen.dart';
-import 'package:eimi_buy_or_sell_app/utils/common_screens/loader.dart';
-import 'package:eimi_buy_or_sell_app/utils/core/core.dart';
+import 'package:Eimi/utils/app_colors.dart';
+import 'package:Eimi/utils/app_strings.dart';
+import 'package:Eimi/utils/base_bloc/base_state.dart';
+import 'package:Eimi/utils/common_screens/errorscreen.dart';
+import 'package:Eimi/utils/common_screens/loader.dart';
+import 'package:Eimi/utils/core/core.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 

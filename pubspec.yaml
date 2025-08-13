@@ -1,4 +1,4 @@
-name: eimi_buy_or_sell_app
+name: Eimi
 description: "It all about buying and selling"
 # The following line prevents the package from being accidentally published to
 # pub.dev using `flutter pub publish`. This is preferred for private packages.
@@ -66,6 +66,15 @@ dependencies:
 dev_dependencies:
   flutter_test:
     sdk: flutter
+  flutter_launcher_icons: ^0.13.1
+
+flutter_icons:
+  android: true          # generates mipmap + adaptive icons
+  ios: true              # updates AppIcon.appiconset
+  image_path: assets/images/logo_foregrounda.png
+
+  adaptive_icon_background: "#FFFFFF"              # or an image path
+  adaptive_icon_foreground: assets/images/logo_foregrounda.png
 
   # The "flutter_lints" package below contains a set of recommended lints to
   # encourage good coding practices. The lint set provided by the package is
@@ -90,7 +99,6 @@ flutter:
     - assets/images/
     - assets/jsons/
     - assets/jsons/categories.json
-    - assets/images/service_category.jpg
     - assets/images/list_icon.png
     - assets/images/check.png
 

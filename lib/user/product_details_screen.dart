@@ -1,9 +1,9 @@
-import 'package:eimi_buy_or_sell_app/user/book_visit_screen.dart';
-import 'package:eimi_buy_or_sell_app/utils/app_colors.dart';
-import 'package:eimi_buy_or_sell_app/utils/base_bloc/base_bloc.dart';
-import 'package:eimi_buy_or_sell_app/utils/base_bloc/base_state.dart';
-import 'package:eimi_buy_or_sell_app/utils/common_screens/custom_container.dart';
-import 'package:eimi_buy_or_sell_app/utils/core/core.dart';
+import 'package:Eimi/user/book_visit_screen.dart';
+import 'package:Eimi/utils/app_colors.dart';
+import 'package:Eimi/utils/base_bloc/base_bloc.dart';
+import 'package:Eimi/utils/base_bloc/base_state.dart';
+import 'package:Eimi/utils/common_screens/custom_container.dart';
+import 'package:Eimi/utils/core/core.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:fluttertoast/fluttertoast.dart';
@@ -229,19 +229,19 @@ class _ProductDetailScreenState extends State<ProductDetailScreen> {
                     if (hasMedia && url!.isNotEmpty && !isVideo)
                       Image.network(url, fit: BoxFit.cover,
                         errorBuilder: (_, __, ___) =>
-                            Image.asset('assets/images/product_image.png', fit: BoxFit.cover),
+                            Image.asset('assets/images/car_product2.png', fit: BoxFit.cover),
                       )
                     else if (hasMedia && isVideo)
                     // your video thumb + play overlay
                       Stack(
                         fit: StackFit.expand,
                         children: [
-                          Image.asset('assets/images/product_image.png', fit: BoxFit.cover),
+                          Image.asset('assets/images/car_product2.png', fit: BoxFit.cover),
                           const Center(child: Icon(Icons.play_circle_fill, size: 72, color: Colors.white)),
                         ],
                       )
                     else
-                      Image.asset('assets/images/product_image.png', fit: BoxFit.cover),
+                      Image.asset('assets/images/car_product2.png', fit: BoxFit.cover),
 
                     // readability gradient
                     const Positioned.fill(
@@ -364,7 +364,7 @@ class _ProductDetailScreenState extends State<ProductDetailScreen> {
                     url,
                     fit: BoxFit.contain,
                     errorBuilder: (_, __, ___) =>
-                        Image.asset('assets/images/product_image.png', fit: BoxFit.contain),
+                        Image.asset('assets/images/car_product2.png', fit: BoxFit.contain),
                   ),
                 );
               },

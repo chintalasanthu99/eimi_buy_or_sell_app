@@ -1,4 +1,4 @@
-import 'package:eimi_buy_or_sell_app/utils/flavour_config.dart';
+import 'package:Eimi/utils/flavour_config.dart';
 
 
 class S3DevConstants implements S3Constants {

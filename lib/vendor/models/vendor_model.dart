@@ -1,7 +1,7 @@
 
 import 'dart:convert';
 
-import 'package:eimi_buy_or_sell_app/utils/common_models/contact_details.dart';
+import 'package:Eimi/utils/common_models/contact_details.dart';
 
 VendorModel vendorModelFromJson(String str) => VendorModel.fromJson(json.decode(str));
 

@@ -1,4 +1,4 @@
-package eimibuyorsell.com.eimi_buy_or_sell_app;
+package Eimibuyorsell.com.Eimi;
 
 import io.flutter.embedding.android.FlutterActivity;
 

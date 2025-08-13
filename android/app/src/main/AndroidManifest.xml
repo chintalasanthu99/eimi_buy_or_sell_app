@@ -3,7 +3,7 @@
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
     <uses-feature android:name="android.hardware.location.gps" android:required="false" />
     <application
-        android:label="eimi_buy_or_sell_app"
+        android:label="Eimi"
         android:name="${applicationName}"
         android:icon="@mipmap/ic_launcher">
 

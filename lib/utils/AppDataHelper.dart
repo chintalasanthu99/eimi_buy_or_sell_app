@@ -1,7 +1,7 @@
 import 'dart:convert';
 
-import 'package:eimi_buy_or_sell_app/utils/shared_pref/shared_preference_constants.dart';
-import 'package:eimi_buy_or_sell_app/utils/shared_pref/shared_preference_helper.dart';
+import 'package:Eimi/utils/shared_pref/shared_preference_constants.dart';
+import 'package:Eimi/utils/shared_pref/shared_preference_helper.dart';
 
 
 class AppDataHelper {

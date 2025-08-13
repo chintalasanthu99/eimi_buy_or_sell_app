@@ -1,4 +1,4 @@
-import 'package:eimi_buy_or_sell_app/utils/app_strings.dart';
+import 'package:Eimi/utils/app_strings.dart';
 import 'package:flutter/material.dart';
 import 'package:lottie/lottie.dart';
 

@@ -32,14 +32,14 @@ echo "buildType = $buildType"
 echo "Server = $server"
 
 if [[($server == "dev")]]; then
-flutter build appbundle --$buildType --flavor eimi_dev -t lib/eimi_dev_main.dart --build-name=$version_name --build-number=$version_code --no-tree-shake-icons
-cp ./build/app/outputs/bundle/eimi_devRelease/app-eimi_dev-$buildType.aab ./releases/eimi_dev$buildType_$version_name.aab
+flutter build appbundle --$buildType --flavor Eimi_dev -t lib/Eimi_dev_main.dart --build-name=$version_name --build-number=$version_code --no-tree-shake-icons
+cp ./build/app/outputs/bundle/Eimi_devRelease/app-Eimi_dev-$buildType.aab ./releases/Eimi_dev$buildType_$version_name.aab
 else
-flutter build appbundle --$buildType --flavor eimi_prod -t lib/eimi_prod_main.dart --build-name=$version_name --build-number=$version_code --no-tree-shake-icons
-cp ./build/app/outputs/bundle/eimi_prodRelease/app-eimi_prod-$buildType.aab ./releases/eimi_prod$buildType_$version_name.aab
+flutter build appbundle --$buildType --flavor Eimi_prod -t lib/Eimi_prod_main.dart --build-name=$version_name --build-number=$version_code --no-tree-shake-icons
+cp ./build/app/outputs/bundle/Eimi_prodRelease/app-Eimi_prod-$buildType.aab ./releases/Eimi_prod$buildType_$version_name.aab
 fi
 
 
 #BEGINCOMMENT
-#"./build_eimi_bundle.sh " 1st parameter d/r(debug/release) space 2nd parameter d for dev else prod
+#"./build_Eimi_bundle.sh " 1st parameter d/r(debug/release) space 2nd parameter d for dev else prod
 #ENDCOMMENT

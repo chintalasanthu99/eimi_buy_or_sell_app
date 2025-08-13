@@ -1,9 +1,9 @@
 import 'package:dio/dio.dart';
-import 'package:eimi_buy_or_sell_app/user/home/home_bloc/home_event.dart';
-import 'package:eimi_buy_or_sell_app/user/home/home_bloc/home_repository.dart';
-import 'package:eimi_buy_or_sell_app/user/home/models/category_list_response.dart';
-import 'package:eimi_buy_or_sell_app/utils/base_bloc/base_state.dart';
-import 'package:eimi_buy_or_sell_app/utils/network/base_response.dart';
+import 'package:Eimi/user/home/home_bloc/home_event.dart';
+import 'package:Eimi/user/home/home_bloc/home_repository.dart';
+import 'package:Eimi/user/home/models/category_list_response.dart';
+import 'package:Eimi/utils/base_bloc/base_state.dart';
+import 'package:Eimi/utils/network/base_response.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 

@@ -1,6 +1,6 @@
 import 'package:cached_network_image/cached_network_image.dart';
-import 'package:eimi_buy_or_sell_app/user/product_details_screen.dart';
-import 'package:eimi_buy_or_sell_app/utils/core/core.dart';
+import 'package:Eimi/user/product_details_screen.dart';
+import 'package:Eimi/utils/core/core.dart';
 import 'package:flutter/material.dart';
 
 import '../utils/app_colors.dart';
@@ -64,7 +64,6 @@ class ProductCard extends StatelessWidget {
   }
 
   Widget _buildImage(String? url, {double? width, double? height, BoxFit fit = BoxFit.fill}) {
-    url = "https://static.eimibuyorsell.com/images/image-db23c5e1-751a-11f0-8e40-47727effada6.png";
     if (url == null || url.isEmpty) {
       return Container(
         height: height,
@@ -72,7 +71,7 @@ class ProductCard extends StatelessWidget {
         decoration: BoxDecoration(
             image: DecorationImage(
                 fit: BoxFit.fill,
-                image: AssetImage("assets/images/product_image.png"))
+                image: AssetImage("assets/images/car_product2.png"))
         ),);
     } else {
       return CachedNetworkImage(
@@ -87,11 +86,13 @@ class ProductCard extends StatelessWidget {
           child: const Center(child: CircularProgressIndicator(strokeWidth: 2)),
         ),
         errorWidget: (context, url, error) => Container(
-          width: width,
           height: height,
-          color: Colors.grey.shade200,
-          child: Icon(Icons.broken_image, size: 40, color: Colors.grey),
-        ),
+          width: width,
+          decoration: BoxDecoration(
+              image: DecorationImage(
+                  fit: BoxFit.fill,
+                  image: AssetImage("assets/images/car_product2.png"))
+          ),),
       );
     }
   }

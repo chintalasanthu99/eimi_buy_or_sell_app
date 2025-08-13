@@ -89,13 +89,13 @@ BEGIN
     BEGIN
         BLOCK "040904e4"
         BEGIN
-            VALUE "CompanyName", "eimibuyorsell.com" "\0"
-            VALUE "FileDescription", "eimi_buy_or_sell_app" "\0"
+            VALUE "CompanyName", "Eimibuyorsell.com" "\0"
+            VALUE "FileDescription", "Eimi" "\0"
             VALUE "FileVersion", VERSION_AS_STRING "\0"
-            VALUE "InternalName", "eimi_buy_or_sell_app" "\0"
-            VALUE "LegalCopyright", "Copyright (C) 2025 eimibuyorsell.com. All rights reserved." "\0"
-            VALUE "OriginalFilename", "eimi_buy_or_sell_app.exe" "\0"
-            VALUE "ProductName", "eimi_buy_or_sell_app" "\0"
+            VALUE "InternalName", "Eimi" "\0"
+            VALUE "LegalCopyright", "Copyright (C) 2025 Eimibuyorsell.com. All rights reserved." "\0"
+            VALUE "OriginalFilename", "Eimi.exe" "\0"
+            VALUE "ProductName", "Eimi" "\0"
             VALUE "ProductVersion", VERSION_AS_STRING "\0"
         END
     END

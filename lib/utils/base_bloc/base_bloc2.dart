@@ -2,7 +2,7 @@
 import 'dart:async';
 import 'package:bloc/bloc.dart';
 import 'package:dio/dio.dart';
-import 'package:eimi_buy_or_sell_app/utils/network/base_response.dart';
+import 'package:Eimi/utils/network/base_response.dart';
 import 'package:flutter/foundation.dart';
 import 'base_state.dart';
 import 'base_event.dart';

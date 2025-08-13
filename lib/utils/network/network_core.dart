@@ -1,10 +1,10 @@
 import 'dart:convert';
 
 import 'package:dio/dio.dart';
-import 'package:eimi_buy_or_sell_app/utils/AppDataHelper.dart';
-import 'package:eimi_buy_or_sell_app/utils/app_log.dart';
-import 'package:eimi_buy_or_sell_app/utils/app_strings.dart';
-import 'package:eimi_buy_or_sell_app/utils/flavour_config.dart';
+import 'package:Eimi/utils/AppDataHelper.dart';
+import 'package:Eimi/utils/app_log.dart';
+import 'package:Eimi/utils/app_strings.dart';
+import 'package:Eimi/utils/flavour_config.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import '../shared_pref/shared_preference_constants.dart';

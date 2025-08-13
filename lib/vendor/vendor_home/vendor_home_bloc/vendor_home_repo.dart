@@ -1,8 +1,8 @@
 
 import 'dart:async';
 
-import 'package:eimi_buy_or_sell_app/utils/network/base_response.dart';
-import 'package:eimi_buy_or_sell_app/utils/network/remote_data_store.dart';
+import 'package:Eimi/utils/network/base_response.dart';
+import 'package:Eimi/utils/network/remote_data_store.dart';
 
 class VendorHomeRepository {
   const VendorHomeRepository();

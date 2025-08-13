@@ -1,10 +1,10 @@
 
-import 'package:eimi_buy_or_sell_app/auth/login_screen.dart';
-import 'package:eimi_buy_or_sell_app/auth/on_boarding_screen1.dart';
-import 'package:eimi_buy_or_sell_app/utils/app_colors.dart';
-import 'package:eimi_buy_or_sell_app/utils/base_bloc/base_bloc.dart';
-import 'package:eimi_buy_or_sell_app/utils/base_bloc/base_state.dart';
-import 'package:eimi_buy_or_sell_app/utils/core/core.dart';
+import 'package:Eimi/auth/login_screen.dart';
+import 'package:Eimi/auth/on_boarding_screen1.dart';
+import 'package:Eimi/utils/app_colors.dart';
+import 'package:Eimi/utils/base_bloc/base_bloc.dart';
+import 'package:Eimi/utils/base_bloc/base_state.dart';
+import 'package:Eimi/utils/core/core.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
@@ -129,7 +129,7 @@ class _OnBoardingScreenState extends State<OnBoardingScreen> {
                               ),
                               VerticalSpace(height: deviceHeight(context)*0.03,),
                               customThemeText(
-                                "Join EIMI and start buying or selling products with ease.",20,fontWeight: FontWeight.w600,
+                                "Join Eimi and start buying or selling products with ease.",20,fontWeight: FontWeight.w600,
                                 textAlign: TextAlign.center,
                               ),
                               VerticalSpace(height: deviceHeight(context)*0.08,),

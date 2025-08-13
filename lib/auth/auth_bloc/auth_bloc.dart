@@ -1,14 +1,14 @@
 import 'package:dio/dio.dart';
-import 'package:eimi_buy_or_sell_app/auth/auth_bloc/auth_event.dart';
-import 'package:eimi_buy_or_sell_app/auth/auth_bloc/auth_repository.dart';
-import 'package:eimi_buy_or_sell_app/user/models/user_model.dart';
-import 'package:eimi_buy_or_sell_app/utils/AppDataHelper.dart';
-import 'package:eimi_buy_or_sell_app/utils/base_bloc/base_state.dart';
-import 'package:eimi_buy_or_sell_app/utils/network/DataModule.dart';
-import 'package:eimi_buy_or_sell_app/utils/network/base_response.dart';
-import 'package:eimi_buy_or_sell_app/utils/shared_pref/shared_preference_constants.dart';
-import 'package:eimi_buy_or_sell_app/utils/shared_pref/shared_preference_helper.dart';
-import 'package:eimi_buy_or_sell_app/vendor/models/vendor_model.dart';
+import 'package:Eimi/auth/auth_bloc/auth_event.dart';
+import 'package:Eimi/auth/auth_bloc/auth_repository.dart';
+import 'package:Eimi/user/models/user_model.dart';
+import 'package:Eimi/utils/AppDataHelper.dart';
+import 'package:Eimi/utils/base_bloc/base_state.dart';
+import 'package:Eimi/utils/network/DataModule.dart';
+import 'package:Eimi/utils/network/base_response.dart';
+import 'package:Eimi/utils/shared_pref/shared_preference_constants.dart';
+import 'package:Eimi/utils/shared_pref/shared_preference_helper.dart';
+import 'package:Eimi/vendor/models/vendor_model.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 

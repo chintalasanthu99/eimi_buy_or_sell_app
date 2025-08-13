@@ -1,8 +1,8 @@
-import 'package:eimi_buy_or_sell_app/bloc/theme_bloc.dart';
-import 'package:eimi_buy_or_sell_app/bloc/theme_event.dart';
-import 'package:eimi_buy_or_sell_app/utils/app_colors.dart';
-import 'package:eimi_buy_or_sell_app/utils/size_utils.dart';
-import 'package:eimi_buy_or_sell_app/utils/text_utils.dart';
+import 'package:Eimi/bloc/theme_bloc.dart';
+import 'package:Eimi/bloc/theme_event.dart';
+import 'package:Eimi/utils/app_colors.dart';
+import 'package:Eimi/utils/size_utils.dart';
+import 'package:Eimi/utils/text_utils.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
